@@ -1,0 +1,24 @@
+:root {
+    border-color: rgb(255, 0, 255);
+    background-color: #01132F;
+    
+}
+
+p {
+    color: white;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    filter: drop-shadow(0 0 50px #476DAB);
+
+    /* temporary sizes etc for testing*/
+    padding: 2vh;
+    width: 30vh;
+    height: 15vh;
+}
