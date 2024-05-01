@@ -1,11 +1,5 @@
 :root {
-    border-color: rgb(255, 0, 255);
-    background-color: #01132F;
-    
-}
-
-p {
-    color: white;
+    background-color: var(--color-background);
 }
 
 a {
@@ -14,11 +8,56 @@ a {
     align-items: center;
 }
 
-.logo {
-    filter: drop-shadow(0 0 50px #476DAB);
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* temporary sizes etc for testing*/
+.logo {
+    filter: drop-shadow(0 0 60px var(--color-primary-dark));
+
+    /* temporary sizes etc for testing */
     padding: 2vh;
     width: 30vh;
     height: 15vh;
+}
+
+
+/* EVERYTHING BELOW THIS LINE IS JUST FOR COLOUR TESTING */
+
+.a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8, .a9 {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.a1 {
+    background-color: var(--white);
+}
+.a2 {
+    background-color: var(--grey-1);
+}
+.a3 {
+    background-color: var(--grey-2);
+}
+.a4 {
+    background-color: var(--grey-3);
+}
+.a5 {
+    background-color: var(--grey-4);
+}
+.a6 {
+    background-color: var(--grey-5);
+}
+.a7 {
+    background-color: var(--grey-6);
+}
+.a8 {
+    background-color: var(--grey-7);
+}
+.a9 {
+    background-color: var(--black);
 }
