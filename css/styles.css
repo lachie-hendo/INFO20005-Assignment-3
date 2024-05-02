@@ -10,9 +10,9 @@ a {
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .logo {
@@ -26,6 +26,33 @@ main {
 
 
 /* EVERYTHING BELOW THIS LINE IS JUST FOR COLOUR TESTING */
+
+.testtext {
+    display:flex;
+    flex-direction: column;
+    background-color: #c0c0c0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.primary {
+    color: var(--color-text-primary);
+}
+
+.secondary {
+    color: var(--color-text-secondary);
+}
+.tertiary {
+    color: var(--color-text-tertiary);
+}
+
+.testcolour {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 
 .a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8, .a9 {
     background-color: aqua;

@@ -1,5 +1,5 @@
 :root {
-    /* === Standard ================================================ */
+    /* === Standard =============================================== */
     --color-primary:                    #dde8f8;
     --color-primary-light:              #e6eefa;
     --color-primary-soft:               #8b9cbb;
@@ -8,36 +8,29 @@
 
     --color-navbar:                     var(--color-primary-light); 
 
-    /* === Typography ============================================== */
+    /* === Typography ================================ */
+    --color-text-primary:               var(--white);
+    --color-text-secondary:             var(--black);
+    --color-text-tertiary:              var(--grey-5);
 
-    /* === Background ============================================== */
+    /* === Background ======================================= */
     --color-background:                 #01132f;
     --color-background-2:               var(--color-primary);
-    --color-background-checkout:        var(--color-white);
+    --color-background-checkout:        var(--white);
 
-    /* === Checkout ================================================ */
+    /* === Checkout ============================================== */
     --color-checkout-box:               var(--color-primary-soft);
     --color-checkout-box-2:             #f6f8fb;
 
-    /* === Buttons ================================================= */
+    /* === Buttons ================================================ */
     --color-button-primary:             #c02d2d;
     --color-button-primary-hover:       #840303;
     --color-button-secondary:           var(--color-primary-soft);
     --color-button-secondary-hover:     var(--color-primary-light);
-    --color-button-unclickable:         #ecedee;
+    --color-button-unclickable:         var(--grey-1);
     --color-button-border:              var(--color-black);
 
-    /* === Greys =================================================== */
-    /*--black:                            #111111;
-    --grey-7:                           #333333;
-    --grey-6:                           #555555;
-    --grey-5:                           #777777;
-    --grey-4:                           #999999;
-    --grey-3:                           #bbbbbb;
-    --grey-2:                           #dddddd;
-    --grey-1:                           #eeeeee;
-    --white:                            #ffffff;*/
-
+    /* === Greys ================================= */
     --black:                            #111111;
     --grey-7:                           #333435;
     --grey-6:                           #535455;
@@ -48,9 +41,8 @@
     --grey-1:                           #ecedee;
     --white:                            #fafcff;
 
-
-    /* === Feedback ================================================ */
-    --color-success:                    #48c933;
+    /* === Feedback ============================== */
+    --color-instock:                    #48c933;
     --color-sale:                       #c90c0c;
-    --color-out-of-stock:               #373837;
+    --color-outstock:                   #373837;
 }
