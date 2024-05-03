@@ -1,11 +1,9 @@
 :root {
-    background-color: var(--color-background);
+    background-color: var(--white /*--color-background*/);
 }
 
 a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
 }
 
 main {
@@ -15,6 +13,16 @@ main {
     justify-content: center;
 }
 
+/* === Header ============================================================== */
+
+/* box encapsulating the header */
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style for the logo */
 .logo {
     filter: drop-shadow(0 0 60px var(--color-primary-dark));
 
@@ -24,67 +32,29 @@ main {
     height: 15vh;
 }
 
-
-/* EVERYTHING BELOW THIS LINE IS JUST FOR COLOUR TESTING */
-
-.testtext {
-    display:flex;
-    flex-direction: column;
-    background-color: #c0c0c0;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.primary {
-    color: var(--color-text-primary);
-}
-
-.secondary {
-    color: var(--color-text-secondary);
-}
-.tertiary {
-    color: var(--color-text-tertiary);
-}
-
-.testcolour {
+.menu-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    margin: auto;
+    border-style: solid;
+    border-color: #fc0b9f;
+    width: 100%;
 }
 
-.a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8, .a9 {
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+.menu-item {
+    margin: auto;
 }
 
-.a1 {
-    background-color: var(--white);
-}
-.a2 {
-    background-color: var(--grey-1);
-}
-.a3 {
-    background-color: var(--grey-2);
-}
-.a4 {
-    background-color: var(--grey-3);
-}
-.a5 {
-    background-color: var(--grey-4);
-}
-.a6 {
-    background-color: var(--grey-5);
-}
-.a7 {
-    background-color: var(--grey-6);
-}
-.a8 {
-    background-color: var(--grey-7);
-}
-.a9 {
-    background-color: var(--black);
-}
+@media (max-width: 750px) {
+    .menu-list, .menu-item {
+       display: none;
+      }
+    }
+
+
+
+
+/* UNITS
+PADDING - EM
+MARGIN - EM
+ELEMENT SIZING - EM
+FONT SIZING - REM (Root EM)
