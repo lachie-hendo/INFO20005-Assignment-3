@@ -44,6 +44,14 @@ main {
     margin: auto;
 }
 
+.icon {
+    max-width: 40px;
+}
+
+.menu-icon {
+    filter:invert(); /* inverts black icons to appear white */
+}
+
 @media (max-width: 750px) {
     .menu-list, .menu-item {
        display: none;
