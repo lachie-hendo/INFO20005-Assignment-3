@@ -37,6 +37,8 @@ img {
     max-width: 220px;
 }
 
+/* === Menu ================================================================ */
+
 .menu-list {
     display: flex;
     margin: auto;
@@ -45,11 +47,16 @@ img {
 
 .menu-item {
     margin: auto;
+    font-size: var(--text-m);
+    font-family: var(--font-secondary);
+    color: var(--color-text-primary);
 }
 
 .menu-icon {
     filter:invert(); /* inverts black icons to appear white */
 }
+
+/* === Search Bar ========================================================== */
 
 .search-bar {
     display: flex;
@@ -59,11 +66,33 @@ img {
     width: 100%;
     border-style: solid;
     border-color: var(--white);
+    border-radius: 5px;
     padding: 0 10px 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .search-products {
+    font-size: var(--text-l);
+    font-family: var(--font-secondary);
+    color: var(--color-text-tertiary);
     margin: 10px 0 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.search-icon {
+    filter:invert();
+    max-width: 30px;
+    max-height: 30px;
+    margin: auto 0 auto 0;
+}
+
+/* === Icons ============================================================== */
+
+.icon {
+    width: 40px;
+    margin: auto;
 }
 
 .icon-box {
@@ -72,17 +101,7 @@ img {
     padding-left: 10px;
 }
 
-.icon {
-    width: 40px;
-    margin: auto;
-}
-
-.search-icon {
-    filter:invert();
-    width: 30px;
-    height: 30px;
-    margin: auto 0 auto 0;
-}
+/* === Header ============================================================== */
 
 .brand-title {
     font-family: 'Johnny Fever';
@@ -101,7 +120,7 @@ img {
 
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 740px) {
     .menu-list, .menu-item {
        display: none;
       }
