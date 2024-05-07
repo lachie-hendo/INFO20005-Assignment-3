@@ -1,10 +1,10 @@
 :root {
-    /* === Fonts ==================== */
-    --font-primary: 'Titillium Web';
-    --font-secondary: 'Johnny Fever';
+    /* === Fonts =============================== */
+    --font-primary: 'Titillium Web', sans-serif;
+    --font-secondary: 'Johnny Fever', serif;
 
-    /* === Base Values ============== */
-    --text-base-size: 1em; /* 16px */
+    /* === Base Values =============== */
+    --text-base-size: 1rem; /* 16px */
     --text-scale-ratio: 1.25;
 
     /* === Text Scale ================================================ */
@@ -20,13 +20,25 @@
     --text-xxl: calc(var(--text-base-size) * var(--text-scale-ratio)
         * var(--text-scale-ratio) * var(--text-scale-ratio));
 
-    /* === Spacing ======== */
-    --space-xxs: .25em;
-    --space-xs: .5em;
-    --space-s: .75em;
-    --space-m: 1em;
-    --space-l: 1.25em;
-    --space-xl: 1.5em;
-    --space-xxl: 1.75em;
-    --space-xxxl: 2em;
+    /* === Spacing ====== */
+    --space-xxs: .25rem;
+    --space-xs: .5rem;
+    --space-s: .75rem;
+    --space-m: 1rem;
+    --space-l: 1.25rem;
+    --space-xl: 1.5rem;
+    --space-xxl: 1.75rem;
+    --space-xxxl: 2rem;
+
+    /* === Spacing ====== */
+    --heading-line-height: 1.4;
+    --body-line-height: 1.6;
 }
+
+
+@media screen and (max-width: 900px) {
+    :root {
+        --text-base-size: .75em;
+    }
+}
+

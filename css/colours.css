@@ -12,7 +12,7 @@
     /* === Typography ================================ */
     --color-text-primary:               var(--white);
     --color-text-secondary:             var(--black);
-    --color-text-tertiary:              var(--grey-5);
+    --color-text-tertiary:              var(--grey-4);
 
     /* === Background ======================================= */
     --color-background:                 var(--color-primary-bg);
