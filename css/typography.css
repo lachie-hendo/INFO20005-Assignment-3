@@ -1,0 +1,32 @@
+:root {
+    /* === Fonts ==================== */
+    --font-primary: 'Titillium Web';
+    --font-secondary: 'Johnny Fever';
+
+    /* === Base Values ============== */
+    --text-base-size: 1em; /* 16px */
+    --text-scale-ratio: 1.25;
+
+    /* === Text Scale ================================================ */
+    --text-xxs: calc(var(--text-base-size) / (var(--text-scale-ratio)
+        * var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-xs: calc(var(--text-base-size) / (var(--text-scale-ratio)
+        * var(--text-scale-ratio)));
+    --text-s: calc(var(--text-base-size) / (var(--text-scale-ratio)));
+    --text-m: calc(var(--text-base-size));
+    --text-l: calc(var(--text-base-size) * var(--text-scale-ratio));
+    --text-xl: calc(var(--text-base-size) * var(--text-scale-ratio)
+        * var(--text-scale-ratio));
+    --text-xxl: calc(var(--text-base-size) * var(--text-scale-ratio)
+        * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+    /* === Spacing ======== */
+    --space-xxs: .25em;
+    --space-xs: .5em;
+    --space-s: .75em;
+    --space-m: 1em;
+    --space-l: 1.25em;
+    --space-xl: 1.5em;
+    --space-xxl: 1.75em;
+    --space-xxxl: 2em;
+}

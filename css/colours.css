@@ -5,6 +5,7 @@
     --color-primary-soft:               #8b9cbb;
     --color-primary-bright:             #3d75dd;
     --color-primary-dark:               #476dab;
+    --color-primary-bg:                 #01122d;
 
     --color-navbar:                     var(--color-primary-light); 
 
@@ -14,13 +15,13 @@
     --color-text-tertiary:              var(--grey-5);
 
     /* === Background ======================================= */
-    --color-background:                 #01132f;
+    --color-background:                 var(--color-primary-bg);
     --color-background-2:               var(--color-primary);
     --color-background-checkout:        var(--white);
 
     /* === Checkout ============================================== */
     --color-checkout-box:               var(--color-primary-soft);
-    --color-checkout-box-2:             #f6f8fb;
+    --color-checkout-box-2:             var(--white);
 
     /* === Buttons ================================================ */
     --color-button-primary:             #c02d2d;
@@ -39,7 +40,7 @@
     --grey-3:                           #bcbec1;
     --grey-2:                           #dadde1;
     --grey-1:                           #ecedee;
-    --white:                            #fafcff;
+    --white:                            #f6f8fb;
 
     /* === Feedback ============================== */
     --color-instock:                    #48c933;

@@ -1,11 +1,14 @@
 :root {
     background-color: var(--color-background);
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--color-text-primary);
 }
 
+
 a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    padding: var(--space-s);
+    height: 100%;
 }
 
 main {
@@ -15,76 +18,149 @@ main {
     justify-content: center;
 }
 
+img {
+    max-width: 100%;
+}
+
+/* === Header ============================================================== */
+
+/* box encapsulating the header */
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style for the logo */
 .logo {
     filter: drop-shadow(0 0 60px var(--color-primary-dark));
-
-    /* temporary sizes etc for testing */
-    padding: 2vh;
-    width: 30vh;
-    height: 15vh;
+    max-width: 220px;
 }
 
+/* === Menu ================================================================ */
 
-/* EVERYTHING BELOW THIS LINE IS JUST FOR COLOUR TESTING */
-
-.testtext {
-    display:flex;
-    flex-direction: column;
-    background-color: #c0c0c0;
-    border-radius: 5px;
-    padding: 10px;
+.menu-list {
+    display: flex;
+    margin: auto;
+    width: 100%;
 }
 
-.primary {
+.menu-item {
+    margin: auto;
+    font-size: var(--text-m);
+    font-family: var(--font-secondary);
     color: var(--color-text-primary);
 }
 
-.secondary {
-    color: var(--color-text-secondary);
-}
-.tertiary {
-    color: var(--color-text-tertiary);
+.menu-icon {
+    filter:invert(); /* inverts black icons to appear white */
 }
 
-.testcolour {
+/* === Search Bar ========================================================== */
+
+.search-bar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin: auto;
+    width: 100%;
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.search-products {
+    font-size: var(--text-l);
+    font-family: var(--font-secondary);
+    color: var(--color-text-tertiary);
+    margin: 10px 0 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.search-icon {
+    filter:invert();
+    max-width: 30px;
+    max-height: 30px;
+    margin: auto 0 auto 0;
+}
+
+/* === Icons ============================================================== */
+
+.icon {
+    width: 40px;
+    margin: auto;
+}
+
+.icon-box {
+    display: flex;
+    width: auto;
+    padding-left: 10px;
+}
+
+/* === Header ============================================================== */
+
+.brand-title {
+    font-family: 'Johnny Fever';
+    display: flex;
+    flex-direction: row;
+}
+
+.brand-icon-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.brand-icon {
     padding: 10px;
 }
 
-.a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8, .a9 {
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+
+
+@media screen and (max-width: 740px) {
+    .menu-list, .menu-item {
+       display: none;
+      }
+    }
+
+.banner-box {
+    max-width: 100%;
 }
 
-.a1 {
-    background-color: var(--white);
+/* UNITS
+PADDING - EM
+MARGIN - EM
+ELEMENT SIZING - EM
+FONT SIZING - REM (Root EM) */
+
+.text1 {
+    font-size: var(--text-xxxl);
 }
-.a2 {
-    background-color: var(--grey-1);
+
+.text2 {
+    font-size: var(--text-xxl);
 }
-.a3 {
-    background-color: var(--grey-2);
+.text3 {
+    font-size: var(--text-xl);
 }
-.a4 {
-    background-color: var(--grey-3);
+.text4 {
+    font-size: var(--text-l);
 }
-.a5 {
-    background-color: var(--grey-4);
+.text5 {
+    font-size: var(--text-m);
 }
-.a6 {
-    background-color: var(--grey-5);
+.text6 {
+    font-size: var(--text-s);
 }
-.a7 {
-    background-color: var(--grey-6);
+.text7 {
+    font-size: var(--text-xs);
 }
-.a8 {
-    background-color: var(--grey-7);
+.text8 {
+    font-size: var(--text-xxs);
 }
-.a9 {
-    background-color: var(--black);
+.text9 {
+    font-size: var(--text-xxxs);
 }
