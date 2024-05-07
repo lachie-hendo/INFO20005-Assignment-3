@@ -4,17 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxx Gaming</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="fonts/johnny-fever.otf">
+
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <link rel="stylesheet" type="text/css" href="/css/colours.css">
+    <link rel="stylesheet" type="text/css" href="/css/typography.css">
 
 </head>
 <body>
-    <header>
-        <a>
-            <img class="logo" src="/images/logo.svg">
+    <header class="header-box">
+
+        <!-- Menu list for desktop mode -->
+        <div class="menu-list">
+            <p class="menu-item">Shop</p>
+            <p class="menu-item">Trade In</p>
+            <p class="menu-item">Contact</p>
+            <p class="menu-item">About Us</p>
+        </div>
+
+        <!-- Logo anchor to return to homepage -->
+        <a href="index.html">
+            <img class="logo" src="/images/logo.svg" alt="Maxx Gaming Logo">
             </img>
         </a>
+        
+        <!-- Menu list for desktop mode -->
+        <div class="menu-list">
+            <span class="search-bar">
+                <p class="search-products">Search 570 Products</p>
+                <img class="search-icon" 
+                     src="/images/icons/search.png" 
+                     alt="search icon">
+            </span>
+            <span class="icon-box">
+                <img class="icon menu-icon" 
+                     src="/images/icons/shopping_cart.png" 
+                     alt="shopping cart icon">
+                <img class="icon menu-icon" 
+                     src="/images/icons/profile.png"
+                     alt="profile icon">
+            </span>
+        </div>
+
+        <nav class="nav-bar">
+        </nav>
     </header>
+
     <nav class="breadcrumb-nav">
         <ul>
          <li><a href="/index.html">Home /</a></li>
@@ -23,22 +59,32 @@
         </ul>
     </nav>
 
-    <div class="product-page-panel">
-        <img src="" alt="Mario Golf: Toad Stool Tour for Nintendo Gamecube">
-    </div>
-    <div class="primary">Mario Golf: Toad Stool Tour</div>
-    <div class="product-price">$25</div>
-    <div>
-        <button class="add-to-cart" type="button">Add to Cart</button>
-    </div>
-    <p class="primary">Product Description</p>
-    <p class="secondary">mario wahoo golf</p>
+    <div class="product-page-card">
+        <img src="/images/games/mario-golf-toadstool-tour/mario-golf-toadstool-tour-cover.webp" alt="Mario Golf: Toad Stool Tour for Nintendo Gamecube">
+            </div>
+            <div class="text3">Mario Golf: Toad Stool Tour</div>
+            <div class="product-price">$25</div>
+            <div>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+     </div>
+
+    <p class="text3">Product Description</p>
+    <p class="text5">Tees, clubs, golf carts, and ... Piranha Plants?! It must be Mario Golf! Mario, Peach, Donkey Kong and a cast of their cohorts have dusted off their clubs and set their sights on the Toadstool Tour championship. Two new styles of golf courses and a new swing system offer both the seasoned Mario golfer and those new to the game a fresh look at golfing in the Mushroom Kingdom. Features include: Choose to play on a conventional course or an all-new course designed from the ground up to be all about the Mushroom Kingdom! Chip over warp pipes and avoid hazards like Piranha Plants, Chain Chomps and Thwomps when playing on Mario-inspired courses. Tee for two, three or four! You can tee-off solo or fill out a foursome for some friendly competition. Control your swing in a manual mode for experts and a partially automated mode for novices.</p>
 
     <br>
 
     <div class="container"></div>
-        <p class="primary">You may also like</p>
-            <div class="product-panel">
+        <p class="text3">YOU MAY ALSO LIKE</p>
+        <span class="product-card-scroll">
+            <div class="product-card">
+                <img src="/images/games/mario-golf-toadstool-tour/mario-golf-toadstool-tour-cover.webp" alt="Pikmin for Gamecube">
+                <div class="product-detail">
+                    <p class="product-price">$45</p>
+                    <p class="secondary">Pikmin</p>
+                    <p class="instock">In Stock</p>
+                </div>
+            </div>
+            <div class="product-card">
                 <img src="" alt="Pikmin for Gamecube">
                 <div class="product-detail">
                     <p class="product-price">$45</p>
@@ -46,6 +92,23 @@
                     <p class="instock">In Stock</p>
                 </div>
             </div>
+            <div class="product-card">
+                <img src="" alt="Pikmin for Gamecube">
+                <div class="product-detail">
+                    <p class="product-price">$45</p>
+                    <p class="secondary">Pikmin</p>
+                    <p class="instock">In Stock</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="" alt="Pikmin for Gamecube">
+                <div class="product-detail">
+                    <p class="product-price">$45</p>
+                    <p class="secondary">Pikmin</p>
+                    <p class="instock">In Stock</p>
+                </div>
+            </div>
+        </span>
     </div>
     <footer>
 
