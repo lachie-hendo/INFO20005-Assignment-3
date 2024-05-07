@@ -1,15 +1,15 @@
 :root {
     background-color: var(--color-background);
-    font-family: 'Titillium Web', sans-serif;
+    font-family: var(--font-primary);
+    letter-spacing: .05em;
     color: var(--color-text-primary);
 }
 
-
-a {
-    display: inline-block;
-    padding: var(--space-s);
-    height: 100%;
+body {
+    margin: var(--space-xs);
+    line-height: 1.2;
 }
+
 
 main {
     display: flex;
@@ -18,8 +18,29 @@ main {
     justify-content: center;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-secondary);
+    font-size: var(--text-xxl);
+    letter-spacing: .1em;
+    margin: var(--space-xxs);
+    line-height: var(--heading-line-height);
+}
+
+a {
+    display: inline-block;
+    padding: var(--space-s) 3vw;
+    height: 100%;
+}
+
 img {
     max-width: 100%;
+}
+
+hr {
+    width: 100%;
+    height: 0;
 }
 
 /* === Header ============================================================== */
@@ -39,71 +60,125 @@ img {
 
 /* === Menu ================================================================ */
 
+/* box for items in the desktop menu */
 .menu-list {
     display: flex;
     margin: auto;
     width: 100%;
 }
 
+/* items in the desktop menu */
 .menu-item {
     margin: auto;
-    font-size: var(--text-m);
+    font-size: var(--text-l);
     font-family: var(--font-secondary);
     color: var(--color-text-primary);
 }
 
+/* last item in a menu list */
+.menu-item:last-child {
+    margin-right: 0; /* remove right margin for the last menu item */
+}
+
+/* icon in the menu list */
 .menu-icon {
-    filter:invert(); /* inverts black icons to appear white */
+    filter:invert(); /* invert black icon to appear white */
 }
 
 /* === Search Bar ========================================================== */
 
+/* search box */
 .search-bar {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     flex: 1;
-    margin: auto;
     width: 100%;
     border-style: solid;
     border-color: var(--white);
     border-radius: 5px;
-    padding: 0 10px 0 10px;
-    white-space: nowrap;
-    overflow: hidden;
+    padding: 0 var(--space-xs);
 }
 
+/* search label */
 .search-products {
     font-size: var(--text-l);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     color: var(--color-text-tertiary);
-    margin: 10px 0 10px 0;
-    white-space: nowrap;
-    overflow: hidden;
+    margin: var(--space-xxs) 0 var(--space-xxs) 0;
 }
 
+/* search icon */
 .search-icon {
     filter:invert();
-    max-width: 30px;
-    max-height: 30px;
-    margin: auto 0 auto 0;
+    max-width: var(--space-xxxl);
+    max-height: var(--space-xxxl);
+    margin-right: var(--space-xxs);
 }
 
 /* === Icons ============================================================== */
 
+/* general icon sizing */
 .icon {
     width: 40px;
-    margin: auto;
+    margin: var(--space-xxs);
 }
 
+/* container for icons */
 .icon-box {
     display: flex;
     width: auto;
-    padding-left: 10px;
+    padding-left: var(--space-l);
 }
 
-/* === Header ============================================================== */
+/* === Banner ============================================================== */
 
-.brand-title {
+.banner {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner-button {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(8%, -50%);
+
+    width: 30vw;
+
+    background-color: var(--color-button-primary);
+    color: var(--white);
+
+    font-family: var(--font-primary);
+    font-size: var(--text-m);
+    font-weight: 1000;
+    letter-spacing: .1em;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    padding: var(--space-xxs) 0;
+}
+
+.banner-button:hover {
+    background-color: var(--color-button-primary-hover);
+}
+
+/* === Page Elements ======================================================= */
+
+.section-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.title {
     font-family: 'Johnny Fever';
     display: flex;
     flex-direction: row;
@@ -114,32 +189,40 @@ img {
     flex-direction: row;
 }
 
-.brand-icon {
-    padding: 10px;
+/* === Utility ================== */
+
+.truncate {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
+/* === Breakpoints ===================== */
 
 
-@media screen and (max-width: 740px) {
+/* Change these items in mobile version */
+@media screen and (max-width: 900px) {
     .menu-list, .menu-item {
        display: none;
-      }
     }
 
-.banner-box {
-    max-width: 100%;
+    .banner {
+        position: relative;
+        width: 100%;
+    }
 }
 
-/* UNITS
-PADDING - EM
-MARGIN - EM
-ELEMENT SIZING - EM
-FONT SIZING - REM (Root EM) */
+/* Change these items in desktop version */
+@media screen and (min-width: 900px) {
+    h1 {
+       display: none;
+    }
 
-.text1 {
-    font-size: var(--text-xxxl);
+    .banner {
+        width: 60%;
+    }
 }
-
+<<<<<<< HEAD
 .text2 {
     font-size: var(--text-xxl);
 }
@@ -206,3 +289,17 @@ FONT SIZING - REM (Root EM) */
     max-width: 400px;
     min-width: 100px;
 }
+=======
+    .banner-button {
+        width: 18vw;
+        font-size: var(--text-l);
+    }
+
+    .banner-box {
+        background-image: url('../images/games/zelda-ocarina-of-time/zelda-oot-banner-blurred.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 50%;
+        background-clip: border-box;
+    }
+>>>>>>> a6838161b6eb181189afd8e5a929d16053b74e8b
