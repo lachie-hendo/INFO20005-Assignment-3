@@ -236,7 +236,75 @@ hr {
     .banner {
         width: 60%;
     }
+}
+<<<<<<< HEAD
+.text2 {
+    font-size: var(--text-xxl);
+}
+.text3 {
+    font-size: var(--text-xl);
+}
+.text4 {
+    font-size: var(--text-l);
+}
+.text5 {
+    font-size: var(--text-m);
+}
+.text6 {
+    font-size: var(--text-s);
+}
+.text7 {
+    font-size: var(--text-xs);
+}
+.text8 {
+    font-size: var(--text-xxs);
+}
+.text9 {
+    font-size: var(--text-xxxs);
+}
 
+/* === Product cards ===================================================== */
+
+.product-card {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: var(--space-s);
+    padding: var(--space-s);
+    min-width: 10em;
+    border-radius: 5px;
+    height: 280px;
+}
+
+.product-card > img {
+    max-height: 50%;
+}
+
+.product-detail > .instock {
+    justify-content: end;
+}
+
+.product-card-scroll {
+    display: flex;
+    overflow-y: auto;
+}
+
+.product-page-card {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: var(--space-s);
+    margin: var(--space-xs);
+}
+
+.product-page-card > img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 100px;
+}
+=======
     .banner-button {
         width: 18vw;
         font-size: var(--text-m);
@@ -249,4 +317,4 @@ hr {
         background-position-y: 62%;
         background-clip: border-box;
     }
-}
+>>>>>>> a6838161b6eb181189afd8e5a929d16053b74e8b
