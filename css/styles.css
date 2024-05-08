@@ -39,8 +39,12 @@ img {
 }
 
 hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 0;
+    margin-left: var(--space-s);
 }
 
 /* === Header ============================================================== */
@@ -180,8 +184,20 @@ hr {
 
 .title {
     font-family: 'Johnny Fever';
+    font-size: var(--text-xxl);
     display: flex;
     flex-direction: row;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 1.8;
+}
+
+.title-break {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: var(--space-xxxs);
 }
 
 .brand-icon-box {
@@ -199,8 +215,7 @@ hr {
 
 /* === Breakpoints ===================== */
 
-
-/* Change these items in mobile version */
+/* Changes these items in mobile version */
 @media screen and (max-width: 900px) {
     .menu-list, .menu-item {
        display: none;
@@ -212,7 +227,7 @@ hr {
     }
 }
 
-/* Change these items in desktop version */
+/* Changes these items in desktop version */
 @media screen and (min-width: 900px) {
     h1 {
        display: none;
@@ -224,14 +239,14 @@ hr {
 
     .banner-button {
         width: 18vw;
-        font-size: var(--text-l);
+        font-size: var(--text-m);
     }
 
     .banner-box {
-        background-image: url('../images/games/zelda-ocarina-of-time/zelda-oot-banner-blurred.jpg');
+        background-image: url('../images/games/zelda-ocarina-of-time/zelda-oot-background-blurred.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position-y: 50%;
+        background-position-y: 62%;
         background-clip: border-box;
     }
 }
