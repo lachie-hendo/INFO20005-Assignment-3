@@ -35,10 +35,8 @@
     --body-line-height: 1.6;
 }
 
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 932px) {
     :root {
         --text-base-size: .75em;
     }
 }
-
