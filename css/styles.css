@@ -39,8 +39,12 @@ img {
 }
 
 hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 0;
+    margin-left: var(--space-s);
 }
 
 /* === Header ============================================================== */
@@ -180,8 +184,20 @@ hr {
 
 .title {
     font-family: 'Johnny Fever';
+    font-size: var(--text-xxl);
     display: flex;
     flex-direction: row;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 1.8;
+}
+
+.title-break {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: var(--space-xxxs);
 }
 
 .brand-icon-box {
@@ -197,10 +213,52 @@ hr {
     overflow: hidden;
 }
 
+/* === Product cards ===================================================== */
+
+.product-card {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: var(--space-s);
+    padding: var(--space-s);
+    min-width: 10em;
+    border-radius: 5px;
+    height: 280px;
+}
+
+.product-card > img {
+    max-height: 50%;
+}
+
+.product-detail > .instock {
+    justify-content: end;
+}
+
+.product-card-scroll {
+    display: flex;
+    overflow-y: auto;
+}
+
+.product-page-card {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: var(--space-s);
+    margin: var(--space-xs);
+}
+
+.product-page-card > img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 100px;
+}
+
+
 /* === Breakpoints ===================== */
 
-
-/* Change these items in mobile version */
+/* Changes these items in mobile version */
 @media screen and (max-width: 900px) {
     .menu-list, .menu-item {
        display: none;
@@ -212,7 +270,7 @@ hr {
     }
 }
 
-/* Change these items in desktop version */
+/* Changes these items in desktop version */
 @media screen and (min-width: 900px) {
     h1 {
        display: none;
@@ -221,42 +279,17 @@ hr {
     .banner {
         width: 60%;
     }
-}
-.text2 {
-    font-size: var(--text-xxl);
-}
-.text3 {
-    font-size: var(--text-xl);
-}
-.text4 {
-    font-size: var(--text-l);
-}
-.text5 {
-    font-size: var(--text-m);
-}
-.text6 {
-    font-size: var(--text-s);
-}
-.text7 {
-    font-size: var(--text-xs);
-}
-.text8 {
-    font-size: var(--text-xxs);
-}
-.text9 {
-    font-size: var(--text-xxxs);
-}
-
 
     .banner-button {
         width: 18vw;
-        font-size: var(--text-l);
+        font-size: var(--text-m);
     }
 
     .banner-box {
-        background-image: url('../images/games/zelda-ocarina-of-time/zelda-oot-banner-blurred.jpg');
+        background-image: url('../images/games/zelda-ocarina-of-time/zelda-oot-background-blurred.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position-y: 50%;
+        background-position-y: 62%;
         background-clip: border-box;
     }
+}
