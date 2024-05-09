@@ -28,6 +28,7 @@
 .product-detail {
     color: var(--color-text-secondary);
     width: 100%;
+    background-color: blue;
 }
 
 .product-price {
