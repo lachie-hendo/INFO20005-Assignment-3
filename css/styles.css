@@ -143,6 +143,16 @@ hr {
     height: auto;
 }
 
+.banner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
 .banner-button {
     position: absolute;
     bottom: 0%;
@@ -175,7 +185,6 @@ hr {
 .section-box {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     position: relative;
     width: 100%;
@@ -204,7 +213,56 @@ hr {
 
 .brand-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: var(--color-background);
+    width: 100%;
+    margin: auto;
+}
+
+.brand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    width: 10vw;
+    background: var(--color-primary);
+    clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.brand-icon > img {
+    width: 75%;
+}
+
+.nintendo:hover {
+    background-color: var(--color-background-nintendo);
+}
+
+.playstation:hover {
+    background-color: var(--color-background-playstation);
+}
+
+.xbox:hover {
+    background-color: var(--color-background-xbox);
+}
+
+.epic-games:hover {
+    background-color: var(--color-background-epic);
+}
+
+.capcom:hover {
+    background-color: var(--color-background-capcom);
+}
+
+.sega:hover {
+    background-color: var(--color-background-sega);
+}
+
+.atari:hover {
+    background-color: var(--color-background-atari);
+}
+
+.bandai:hover {
+    background-color: var(--color-background-bandai);
 }
 
 /* === Utility ================== */
@@ -228,6 +286,18 @@ hr {
         position: relative;
         width: 100%;
     }
+
+    .brand-box {
+        max-width: 916px;
+        overflow-x: scroll;
+    }
+
+    .brand-icon {
+        margin: 0 var(--space-s) var(--space-s) 0;
+        width: 80px;
+        aspect-ratio: 1;
+        height: 80px;
+    }
 }
 
 /* Changes these items in desktop version */
@@ -243,7 +313,6 @@ hr {
 
     .banner-button {
         width: 18vw;
-        font-size: var(--text-m);
     }
 
     .banner-box {
@@ -252,5 +321,9 @@ hr {
         background-size: 100%;
         background-position-y: 62%;
         background-clip: border-box;
+    }
+
+    .brand-box {
+        justify-content: space-between;
     }
 }

@@ -14,10 +14,19 @@
     --color-text-secondary:             var(--black);
     --color-text-tertiary:              var(--grey-4);
 
-    /* === Background ======================================= */
+    /* === Background ========================================== */
     --color-background:                 var(--color-primary-bg);
     --color-background-2:               var(--color-primary);
     --color-background-checkout:        var(--white);
+
+    --color-background-nintendo:        #f1ced1;
+    --color-background-playstation:     #c2ddf5;
+    --color-background-xbox:            #d8f0d8;
+    --color-background-epic:            #eae6e8;
+    --color-background-capcom:          #fff6d3;
+    --color-background-sega:            #d4d4ff;
+    --color-background-atari:           #ffe1e2;
+    --color-background-bandai:          #fddabc;
 
     /* === Checkout ============================================== */
     --color-checkout-box:               var(--color-primary-soft);
