@@ -1,0 +1,46 @@
+.checkout-options {
+    background-color: var(--color-primary);
+    margin: var(--space-s);
+    padding: var(--space-xs);
+
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px; /* to change to var(--corner-round) later */
+    
+    box-shadow: 0 5px 0.5em var(--grey-3);
+}
+
+.checkout-options:hover {
+    background-color: var(--color-checkout-box);
+    color: var(--color-text-primary);
+}
+
+.form {
+    background-color: var(--color-checkout-box-2);
+    color: var(--color-text-secondary);
+    margin: var(--space-s);
+    padding: var(--space-xs);
+    border-radius: 5px; /* to change to var(--corner-round) later */
+}
+
+.form-textfield {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-xs);
+    background-color: blue;
+    font-size: var(--text-s);
+}
+
+input, textarea, select {
+    min-height: 35px;
+    max-height: 50px;
+}
+
+.small-input {
+    width: 50%;
+}
+
+.large-input {
+    width: 100%;
+}
