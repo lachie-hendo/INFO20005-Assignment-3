@@ -16,7 +16,7 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
 
 </head>
 <body>
-    <header class="header-box">
+    <header class="centered">
 
         <!-- Menu list for desktop mode -->
         <div class="menu-list">
@@ -27,7 +27,7 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
         </div>
 
         <!-- Logo anchor to return to homepage -->
-        <a href="index.html">
+        <a class="center" href="index.html">
             <img class="logo" src="images/logo.svg" alt="Maxx Gaming Logo">
         </a>
         
@@ -35,28 +35,47 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
         <div class="menu-list">
             <span class="search-bar truncate">
                 <img class="search-icon" 
-                     src="images/icons/search.png" 
-                     alt="search icon">
+                    src="images/icons/search.png" 
+                    alt="search icon">
                 <p class="search-products truncate">Search 570 Products</p>
             </span>
             <span class="icon-box">
                 <img class="icon menu-icon" 
-                     src="images/icons/shopping_cart.png" 
-                     alt="shopping cart icon">
+                    src="images/icons/shopping_cart.png" 
+                    alt="shopping cart icon">
                 <img class="icon menu-icon" 
-                     src="images/icons/profile.png"
-                     alt="profile icon">
+                    src="images/icons/profile.png"
+                    alt="profile icon">
             </span>
         </div>
-
-        <nav class="nav-bar">
-        </nav>
-
     </header>
 
-    <main>
+    <nav class="nav-bar">
+        <a class="centered" href="index.html">
+            <img class="icon" 
+                src="images/icons/menu.png" 
+                alt="menu icon">
+        </a>
+        <a class="centered" href="index.html">
+            <img class="icon" 
+                src="images/icons/search.png" 
+                alt="shopping cart icon">
+        </a>
+        <a class="centered" href="index.html">
+            <img class="icon" 
+                src="images/icons/shopping_cart.png" 
+                alt="shopping cart icon">
+        </a>
+        <a class="centered" href="index.html">
+            <img class="icon" 
+                src="images/icons/profile.png" 
+                alt="shopping cart icon">
+        </a>
+    </nav>
+
+    <main class="centered">
         <section class="banner-box">
-            <h1>Retro Videogames For Sale</h1>
+            <h1 class="centered">Retro Videogames For Sale</h1>
             <div class="banner">
                 <img src="images/games/zelda-ocarina-of-time/zelda-oot-banner.jpg"
                      alt="Zelda: Ocarina of Time banner">
@@ -67,7 +86,7 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
         <section class="section-box">
             <span class="title">
                 <h2>Our Brands</h2>
-                <div class="title-break"><hr></div>
+                <div class="title-break"><hr class="centered"></div>
             </span>
             <span class="brand-box">
                 <div class="brand-icon nintendo">
@@ -105,7 +124,11 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
             </div>
         </section>
     </main>
+
     <footer>
     </footer>
+    
+    <nav class="nav-space">
+    </nav>
 </body>
 </html>
