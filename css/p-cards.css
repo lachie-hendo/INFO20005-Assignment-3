@@ -35,11 +35,6 @@
     font-size: var(--text-xxl);
 }
 
-.product-price {
-    font-size: var(--text-xxl);
-    font-weight: bold;
-}
-
 .add-to-cart {
     background-color: var(--color-button-primary);
     color: var(--white);
