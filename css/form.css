@@ -1,46 +1,218 @@
+/* === Option buttons within checkout ====================================== */
 .checkout-options {
     background-color: var(--color-primary);
-    margin: var(--space-s);
     padding: var(--space-xs);
-
     border-style: solid;
     border-color: black;
     border-width: 1px;
     border-radius: 5px; /* to change to var(--corner-round) later */
-    
+    margin-bottom: var(--space-s);
     box-shadow: 0 5px 0.5em var(--grey-3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: var(--text-l);
 }
 
-.checkout-options:hover {
+.checkout-options .delivery-provider {
+    justify-self:end;
+    align-self: center; /* why does this not work! */
+    grid-column: 2;
+}
+
+.checkout-options .delivery-price {
+    grid-column: 1;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.checkout-options .delivery-time {
+    grid-column: 1;
+    margin-bottom: var(--space-xs);
+}
+
+.checkout-options:focus {
     background-color: var(--color-checkout-box);
     color: var(--color-text-primary);
 }
 
+.checkout-options:hover {
+    background-color: var(--color-primary-light);
+}
+
+.subheading {
+    font-size: var(--text-xxl);
+    font-weight: bold;
+    margin-bottom: var(--space-s);
+}
+
+.checkout-heading {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: var(--space-s);
+}
+
+/* === Checkout Forms with Input =========================================== */
 .form {
     background-color: var(--color-checkout-box-2);
     color: var(--color-text-secondary);
+
     margin: var(--space-s);
-    padding: var(--space-xs);
+    padding: var(--space-l) var(--space-s) var(--space-l) var(--space-s);
+    box-sizing: border-box;
     border-radius: 5px; /* to change to var(--corner-round) later */
+
+    width: 100%;
+    max-width: 932px;
 }
 
 .form-textfield {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
-    margin-bottom: var(--space-xs);
-    background-color: blue;
+    width: 100%;
+}
+
+.form-textfield input,select {
+    width: 100%;
+    font-size: var(--text-l);
+    box-sizing: border-box;
+}
+
+.form-textfield.small-input {
+    width: 39%;
+    margin-right: -5px; /* Get rid of default space between inline-blocks*/
+}
+
+.form-textfield.mid-input {
+    width: 60%;
+    margin-left: 1%;
+}
+
+.form-textfield label {
+    display: block;
     font-size: var(--text-s);
 }
 
 input, textarea, select {
-    min-height: 35px;
-    max-height: 50px;
+    min-height: 40px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-bottom: var(--space-xs);
+
+    font-family: var(--font-primary);
+
+    border-radius: 3px;
+    border-width: 1px;
 }
 
-.small-input {
-    width: 50%;
+.form-textfield label::after {
+    content: " *";
+    color: var(--color-sale);
 }
 
-.large-input {
+/* === Checkout step progress bar ========================================== */
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-s);
+}
+
+.progress-bar-dot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--text-xs);
+}
+
+.progress-bar-dot.inactive {
+    color: var(--grey-4);
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.dot.fill {
+    background-color: black;
+}
+
+.dot.unfill {
+    border: solid 2px;
+}
+
+/* === Secondary Form of checkout ========================================== */
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form hr {
+    margin: var(--space-s) 0 var(--space-s) 0;
+}
+
+.checkout-product {
+    display: grid;
+    gap: var(--space-m);
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 15vh;
+}
+
+.checkout-product-title {
+    grid-column: span 2;
+}
+
+.checkout-product span {
+    grid-column: 3;
+    align-self: self-end;
+    justify-self: end;
+}
+
+.quantity {
+    grid-column: 2;
+    align-self: self-end;
+}
+
+.checkout-product-image {
+    display: flex;
+    height: 100%;
     width: 100%;
+    grid-row: span 2;
+    background-color: aqua;
+}
+
+.checkout-product-image img {
+    max-width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    align-self: center;
+}
+
+.hr-dashed {
+    border-style: dashed;
+    color: var(--grey-3);
+}
+
+/* === Desktop checkout layout ============================================= */
+@media screen and (min-width: 933px) {
+    .centered {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .checkout-heading {
+        font-size: 2.5em;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .form-secondary {
+        width: 40%;
+    }
 }
