@@ -14,43 +14,71 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
     <link rel="stylesheet" type="text/css" href="../css/colours.css">
     <link rel="stylesheet" type="text/css" href="../css/typography.css">
     <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <link rel="stylesheet" type="text/css" href="../css/p-cards.css">
 
 </head>
 <body>
-    <main>
+    <main class="centered">
        <section class="section-box form">
+            <p class="checkout-heading">Checkout</p>
+            <div class="progress-bar">
+                <div class="progress-bar-dot">
+                    <span class="dot fill"></span>
+                    <div>Shipping</div>
+                </div>
+                <div class="progress-bar-dot inactive">
+                    <span class="dot unfill"></span>
+                    <div>Payment</div>
+                </div>
+                <div class="progress-bar-dot inactive">
+                    <span class="dot unfill"></span>
+                    <div">Completed</div>
+                </div>
+            </div>
             <form action="confirmation.html">
-                <h1>Checkout</h1>
-                <div class="form-textfield">
-                    <label>First Name</label> 
-                    <input class="small-input" type="text">
-                </div>
-                <div class="form-textfield">
-                    <label>Last Name</label> 
-                    <input class="small-input" type="text">
-                </div>
-                <div class="form-textfield">
-                    <label>Email</label> 
-                    <input class="large-input" type="text">
-                </div>
-                <div class="form-textfield">
-                    <label>Street Address</label> 
-                    <input class="large-input" type="text">
-                </div>
-                <div class="form-textfield">
-                    <label>City/State</label> 
-                    <input class="small-input" type="text">
-                </div>
-                <div class="form-textfield">
-                    <label>Country</label> 
-                    <input class="small-input" type="text"></div>
-                <div class="form-textfield">
-                    <label>Postcode</label> 
-                    <input class="small-input" type="text">
+                <div class=".form-textfield-group">
+                    <div class="form-textfield small-input">
+                        <label>Full Name</label>
+                        <input type="text" >
+                    </div>
+                    <div class="form-textfield mid-input">
+                        <label>Last Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-textfield">
+                        <label>Email</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-textfield">
+                        <label>Street Address</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-textfield small-input">
+                        <label>City</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-textfield mid-input">
+                        <label>State/Territory</label>
+                        <select>
+                            <option value="0">Select State</option>
+                            <option value="1">Victoria</option>
+                            <option value="2">Queensland</option>
+                            <option value="3">New South Wales</option>
+                            <option value="4">Western Australia</option>
+                            <option value="5">South Australia</option>
+                            <option value="6">Tasmania</option>
+                            <option value="7">Australian Capital Territory</option>
+                            <option value="8">Nourthern Territory</option>
+                        </select>
+                    </div>
+                    <div class="form-textfield small-input">
+                        <label>Postcode</label>
+                        <input type="text">
+                    </div>
                 </div>
             </form>
             <div class="delivery">
-                <h1>Delivery Options</h1>
+                <p class="subheading">Delivery Options</p>
                 <div class="checkout-options">
                     <p class="delivery-time">5-7 Business Days</p>
                     <p class="delivery-price">Free</p>
@@ -67,9 +95,30 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
                     <p class="delivery-provider">UPS</p>
                 </div>
             </div>
-    
-            <button type="submit">Proceed</button>
-
+       </section>
+       <section class="section-box form form-secondary">
+            <div class="checkout-product">
+                <div class="checkout-product-image" >
+                    <img src="../images/games/mario-golf-toadstool-tour/mario-golf-toadstool-tour-cover.jpeg" alt="Mario Golf: Toadstool Tour">
+                </div>
+                <p class="checkout-product-title">Mario Golf: Toadstool Tour for Gamecube</p>
+                <p class="quantity">Quantity: 1</p>
+                <span>$25</span>
+            </div>
+        <hr class="hr-dashed">
+            <div class="checkout-product">
+                <div class="checkout-product-image" >
+                    <img src="../images/games/pokemon-ds/pokemon-black.png" alt="Pokemon Black for DS">
+                </div>
+                <p class="checkout-product-title">Pokemon Black for Nintendo DS</p>
+                <p class="quantity">Quantity: 1</p>
+                <span>$25</span>
+            </div>
+        <hr class="hr-dashed">
+            <p class="checkout-total">Shipping<span>$0</span></p>
+        <hr>
+            <p class="checkout-total">Total <span>$30</span></p>
+        <button type="submit">Proceed</button>
        </section>
     </main>
     <footer>
