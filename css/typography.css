@@ -30,9 +30,12 @@
     --space-xxl: 1.75rem;
     --space-xxxl: 2rem;
 
-    /* === Spacing ====== */
+    /* === Spacing ============ */
     --heading-line-height: 1.4;
     --body-line-height: 1.6;
+
+    /* === Cornering === */
+    --corner-round: 5px;
 }
 
 @media screen and (max-width: 932px) {
