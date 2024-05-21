@@ -289,6 +289,16 @@ hr {
     margin-left: 0;
 }
 
+.text {
+    font-size: var(--text-xl);
+    line-height: 1.5;
+}
+
+.portrait {
+    width: 30%;
+    float: right;
+}
+
 /* === Brand =============================================================== */
 
 .brand-icon {
