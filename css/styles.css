@@ -46,6 +46,69 @@ hr {
     padding: var(--space-s) 3vw;
 }
 
+/* === Footer ============================================================== */
+
+.footer {
+    flex-direction: column;
+    font-size: var(--text-m);
+
+}
+
+.policies {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.socials {
+    padding-top: var(--space-s);
+    flex-direction: row;
+    font-family: var(--font-secondary);
+}
+
+.links {
+    padding-top: var(--space-s);
+    width: 80%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-title {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-size: var(--text-xl);
+    font-family: var(--font-secondary);
+    padding-right: var(--space-m);
+}
+
+.footer-policies {
+    padding: var(--space-m) 0 0 0;
+}
+
+.footer-bold {
+    padding: var(--space-m) 0 var(--space-xxs) 0;
+    font-weight: 700;
+}
+
+.footer-text {
+    font-size: var(--text-s);
+    padding: var(--space-l) 0;
+}
+
+.payment-icons {
+    background-color: var(--color-background-2);
+    border-radius: var(--corner-round);
+    padding: var(--space-xxs) 0;
+    margin: var(--space-m) 0;
+}
+
+.payment-icon {
+    min-height: 20px;
+    max-height: 20px;
+    margin: var(--space-xs);
+}
 /* === Nav Bar ============================================================= */
 
 .nav-bar {
@@ -131,7 +194,8 @@ hr {
 
 /* general icon sizing */
 .icon {
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
     margin: var(--space-xxs);
 }
 
@@ -218,11 +282,11 @@ hr {
 }
 
 .title-break {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    margin-left: var(--space-xxxs);
+}
+
+.section-break {
+    margin-left: 0;
 }
 
 /* === Brand =============================================================== */
@@ -325,7 +389,7 @@ hr {
 .product-price {
     display: flex;
     align-items: center;
-    padding: var(--space-xxxs) 0 var(--space-xxs) 0;
+    padding: var(--space-xxs) 0 var(--space-xxs) 0;
 }
 
 .product-card-price {
@@ -408,9 +472,13 @@ hr {
 
     .brand-icon {
         margin: 0 var(--space-xs);
-        width: 80px;
-        aspect-ratio: 1;
-        height: 80px;
+        
+        /* doing this since 'aspect-ratio: 1' wasn't working on my browser!! */
+        min-width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        max-height: 80px;
+
     }
 
     .brand-icon:first-child {
@@ -452,5 +520,36 @@ hr {
 
     .content-box {
         justify-content: space-between;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .contacts {
+        padding-top: var(--space-xxxl);
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    .policies {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 calc(3 * var(--space-xxxl)) 0 0;
+    }
+
+    .payment-icons {
+        display: none;
     }
 }
