@@ -1,35 +1,21 @@
 /* === Option buttons within checkout ====================================== */
+
+/* option buttons to be used for delivery and payment options */
 .checkout-options {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-light);
     padding: var(--space-xs);
+    margin-bottom: var(--space-s);
+    box-shadow: 0 5px 0.5em var(--grey-3);
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    border-radius: 5px; /* to change to var(--corner-round) later */
-    margin-bottom: var(--space-s);
-    box-shadow: 0 5px 0.5em var(--grey-3);
+    border-radius: var(--corner-round);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     font-size: var(--text-l);
 }
 
-.checkout-options .delivery-provider {
-    justify-self:end;
-    align-self: center; /* why does this not work! */
-    grid-column: 2;
-}
-
-.checkout-options .delivery-price {
-    grid-column: 1;
-    align-self: flex-end;
-    font-weight: bold;
-}
-
-.checkout-options .delivery-time {
-    grid-column: 1;
-    margin-bottom: var(--space-xs);
-}
-
+/* to change button appearance once clicked !! doesn't work!! */
 .checkout-options:focus {
     background-color: var(--color-checkout-box);
     color: var(--color-text-primary);
@@ -39,6 +25,23 @@
     background-color: var(--color-primary-light);
 }
 
+/* delivery provider on right of button */
+.checkout-options .delivery-provider {
+    grid-column: 2;
+}
+
+.checkout-options .delivery-price {
+    grid-column: 1;
+    align-self: end;
+    font-weight: bold;
+}
+
+.checkout-options .delivery-time {
+    grid-column: 1;
+    margin-bottom: var(--space-xs);
+}
+
+/* for bold and large font */
 .subheading {
     font-size: var(--text-xxl);
     font-weight: bold;
@@ -51,47 +54,68 @@
     margin-bottom: var(--space-s);
 }
 
+.payment .checkout-options {
+    display: flex;
+    align-items: center;
+}
+
+.payment img {
+    width: auto;
+    height: 3vh;
+    align-self: center;
+    margin-right: var(--space-xs);
+
+}
+
+.apple img {
+    padding-bottom: 2px; /* centring vertical weight of icon */
+}
+
 /* === Checkout Forms with Input =========================================== */
+/* background container for checkout and completion */
 .form {
     background-color: var(--color-checkout-box-2);
     color: var(--color-text-secondary);
 
     margin: var(--space-s);
-    padding: var(--space-l) var(--space-s) var(--space-l) var(--space-s);
+    padding: var(--space-s);
     box-sizing: border-box;
-    border-radius: 5px; /* to change to var(--corner-round) later */
-
+    border-radius: var(--corner-round);
+    display: flex;
     width: 100%;
     max-width: 932px;
 }
 
-.form-textfield {
-    display: inline-block;
+/* form input container */
+.form-textfield-group {
+    display: flex;
     flex-wrap: wrap;
-    width: 100%;
-}
-
-.form-textfield input,select {
-    width: 100%;
-    font-size: var(--text-l);
     box-sizing: border-box;
+    gap: 1%;
 }
 
-.form-textfield.small-input {
-    width: 39%;
-    margin-right: -5px; /* Get rid of default space between inline-blocks*/
+/* text-field sizing */
+.xsmall-input {
+    width: 19%; /* taking into account the 1% gap */
 }
 
-.form-textfield.mid-input {
+.small-input {
+    width: 39%; /* taking into account the 1% gap */
+}
+
+.mid-input {
     width: 60%;
-    margin-left: 1%;
+}
+
+.large-input {
+    width: 100%;
 }
 
 .form-textfield label {
-    display: block;
     font-size: var(--text-s);
 }
 
+/* individual input-fields */
 input, textarea, select {
     min-height: 40px;
     box-sizing: border-box;
@@ -104,9 +128,21 @@ input, textarea, select {
     border-width: 1px;
 }
 
+/* state selection bar */
+.form-textfield input,select {
+    width: 100%;
+    font-size: var(--text-l);
+    box-sizing: border-box;
+}
+
+/* required field indicator */
 .form-textfield label::after {
     content: " *";
     color: var(--color-sale);
+}
+
+.form hr {
+    margin-left: 0;
 }
 
 /* === Checkout step progress bar ========================================== */
@@ -116,6 +152,7 @@ input, textarea, select {
     margin-bottom: var(--space-s);
 }
 
+/* dot and text container for progress bar */
 .progress-bar-dot {
     display: flex;
     flex-direction: column;
@@ -123,8 +160,13 @@ input, textarea, select {
     font-size: var(--text-xs);
 }
 
-.progress-bar-dot.inactive {
-    color: var(--grey-4);
+/* incomplete step, greyed out */
+.progress-bar .inactive {
+    color: var(--grey-3);
+}
+
+.progress-bar hr {
+    border: 1px solid ;
 }
 
 .dot {
@@ -134,42 +176,45 @@ input, textarea, select {
     box-sizing: border-box;
 }
 
+/* for complete or current step */
 .dot.fill {
     background-color: black;
 }
 
+/* for incompleted step */
 .dot.unfill {
     border: solid 2px;
 }
 
 /* === Secondary Form of checkout ========================================== */
+/* total price */
 .checkout-total {
     display: flex;
     justify-content: space-between;
 }
 
-.form hr {
-    margin: var(--space-s) 0 var(--space-s) 0;
-}
-
+/* layout within product panel for checkout and cart */
 .checkout-product {
     display: grid;
     gap: var(--space-m);
     grid-template-columns: 2fr 3fr 1fr;
     grid-template-rows: auto 1fr;
     min-height: 15vh;
+    padding: var(--space-s);
 }
 
 .checkout-product-title {
     grid-column: span 2;
 }
 
+/* product price */
 .checkout-product span {
     grid-column: 3;
     align-self: self-end;
     justify-self: end;
 }
 
+/* unadjustable quantity number */
 .quantity {
     grid-column: 2;
     align-self: self-end;
@@ -180,7 +225,6 @@ input, textarea, select {
     height: 100%;
     width: 100%;
     grid-row: span 2;
-    background-color: aqua;
 }
 
 .checkout-product-image img {
@@ -195,7 +239,43 @@ input, textarea, select {
     color: var(--grey-3);
 }
 
+/* coloured product overview panel */
+.cart-card {
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 5px 0.5em rgb(0, 0, 0, 0.25); /* need to make box shadow into a variable */
+    margin: var(--space-s) 0 var(--space-s) 0;
+}
+
+.cart-card:first-child {
+    margin-top: 0;
+}
+
+/* === Text Alignment ====================================================== */
+.text-centered {
+    text-align: center;
+}
+
+/* === Completetion ======================================================== */
+.check-mark {
+    width: 10vh;
+    display: flex;
+    align-self: center;
+    margin: var(--space-s);
+}
+
+.summary {
+    background-color: var(--color-checkout-box);
+    padding: var(--space-s);
+    border-radius: var(--corner-round);
+}
+
+.order-number {
+    font-weight: bold;
+}
+
 /* === Desktop checkout layout ============================================= */
+/* moves secondary form to second column */
 @media screen and (min-width: 933px) {
     .centered {
         display: flex;
@@ -214,5 +294,12 @@ input, textarea, select {
 
     .form-secondary {
         width: 40%;
+    }
+
+    /* row of payment option buttons  */
+    .payment {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }

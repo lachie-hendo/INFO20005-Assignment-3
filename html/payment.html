@@ -26,9 +26,9 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
                     <span class="dot fill"></span>
                     <div>Shipping</div>
                 </div>
-                <hr class="progress-line inactive">
-                <div class="progress-bar-dot inactive">
-                    <span class="dot unfill"></span>
+                <hr class="progress-line">
+                <div class="progress-bar-dot">
+                    <span class="dot fill"></span>
                     <div>Payment</div>
                 </div>
                 <hr class="progress-line inactive">
@@ -37,64 +37,44 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
                     <div">Completed</div>
                 </div>
             </div>
-            <form class="form-textfield-group">
-                    <div class="form-textfield small-input">
-                        <label>Full Name</label>
+            <p class="subheading">How would you like to pay?</p>
+            <div class="payment">
+                <div class="checkout-options apple">
+                    <img src="../images/brands/apple-logo.svg" alt="Apple logo">
+                    <div class="apple-pay">Apple Pay</div>
+                </div>
+                <div class="checkout-options">
+                    <img src="../images/brands/google-logo.png" alt="Google logo">
+                    <div class="google-pay">Google Pay</div>
+                </div>
+                <div class="checkout-options">
+                    <img src="../images/icons/credit-card.png" alt="">
+                    <div class="credit">Credit/Debit Card</div>
+                </div>
+                <div class="checkout-options">
+                    <img src="../images/brands/paypal-logo.svg" alt="Paypal">
+                </div>
+            </div>
+            <form action="confirmation.html">
+                <div class="form-textfield-group">
+                    <div class="form-textfield large-input">
+                        <label>Name on Card</label>
                         <input type="text" >
                     </div>
                     <div class="form-textfield mid-input">
-                        <label>Last Name</label>
+                        <label>Card Number</label>
                         <input type="text">
                     </div>
-                    <div class="form-textfield large-input">
-                        <label>Email</label>
+                    <div class="form-textfield xsmall-input">
+                        <label>Expiry Date</label>
                         <input type="text">
                     </div>
-                    <div class="form-textfield large-input">
-                        <label>Street Address</label>
+                    <div class="form-textfield xsmall-input">
+                        <label>CVC</label>
                         <input type="text">
-                    </div>
-                    <div class="form-textfield small-input">
-                        <label>City</label>
-                        <input type="text">
-                    </div>
-                    <div class="form-textfield mid-input">
-                        <label>State/Territory</label>
-                        <select>
-                            <option value="0">Select State</option>
-                            <option value="1">Victoria</option>
-                            <option value="2">Queensland</option>
-                            <option value="3">New South Wales</option>
-                            <option value="4">Western Australia</option>
-                            <option value="5">South Australia</option>
-                            <option value="6">Tasmania</option>
-                            <option value="7">Australian Capital Territory</option>
-                            <option value="8">Nourthern Territory</option>
-                        </select>
-                    </div>
-                    <div class="form-textfield small-input">
-                        <label>Postcode</label>
-                        <input type="text">
-                    </div>
+                    </div>   
+                </div>
             </form>
-            <div class="delivery">
-                <p class="subheading">Delivery Options</p>
-                <div class="checkout-options">
-                    <p class="delivery-time">5-7 Business Days</p>
-                    <p class="delivery-price">Free</p>
-                    <p class="delivery-provider">Auspost</p>
-                </div>
-                <div class="checkout-options">
-                    <p class="delivery-time">2 Business Days</p>
-                    <p class="delivery-price">$12.49</p>
-                    <p class="delivery-provider">Auspost Express</p>
-                </div>
-                <div class="checkout-options">
-                    <p class="delivery-time">6 Business Days</p>
-                    <p class="delivery-price">$4.99</p>
-                    <p class="delivery-provider">UPS</p>
-                </div>
-            </div>
        </section>
        <section class="section-box form form-secondary">
             <div class="checkout-product">
@@ -116,9 +96,11 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
             </div>
         <hr class="hr-dashed">
             <p class="checkout-total">Shipping<span>$0</span></p>
+        <hr class="hr-dashed">
+            <p class="checkout-total">Surcharge<span>$0</span></p>
         <hr>
             <p class="checkout-total">Total <span>$144</span></p>
-        <button type="submit" formaction="payment.html">Proceed</button>
+        <button>Complete Payment</button>
        </section>
     </main>
     <footer>
