@@ -18,9 +18,14 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
 
 </head>
 <body>
-    <main class="centered">
+    <main class="centered form-group">
        <section class="section-box form">
-            <p class="checkout-heading">Checkout</p>
+            <div class="form-header">
+                <p class="checkout-heading">Checkout</p>
+                <a href="./cart.html">
+                    <button class="back-button">Back to Cart</button>
+                </a>
+            </div>
             <div class="progress-bar">
                 <div class="progress-bar-dot">
                     <span class="dot fill"></span>
@@ -76,7 +81,7 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
                         <label>Suburb</label>
                         <input type="text">
                     </div>
-                    <div class="form-textfield xsmall-input">
+                    <div class="form-textfield small-input">
                         <label>Postcode</label>
                         <input type="text">
                     </div>
@@ -120,9 +125,13 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
             </div>
         <hr class="hr-dashed">
             <p class="checkout-total">Shipping<span>$0</span></p>
+        <hr class="hr-dashed">
+            <p class="checkout-total">Discount<span>$0</span></p>
         <hr>
             <p class="checkout-total total">Total <span>$144</span></p>
-        <button class="button-primary">Proceed to Payment</button>
+        <a href="./payment.html">
+            <button class="button-primary checkout-button">Proceed to Payment</button>
+        </a>
        </section>
     </main>
     <footer>

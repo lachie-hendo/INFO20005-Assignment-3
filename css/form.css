@@ -71,6 +71,33 @@
     padding-bottom: 2px; /* centring vertical weight of icon */
 }
 
+/* progression buttons in checkout flow */
+.checkout-button {
+    width: 100%;
+    height: 40px;
+    margin: var(--space-s) 0 ;
+    font-size: var(--text-l);
+}
+
+.checkout-button:disabled {
+    background-color: var(--color-button-unclickable);
+}
+
+.back-button {
+    width: auto;
+    height: 30px;
+    font-size: var(--text-l);
+    background-color: var(--grey-4);
+    border: none;
+    border-radius: var(--corner-round);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: var(--grey-5);
+}
+
 /* === Checkout Forms with Input =========================================== */
 
 /* background container for checkout and completion */
@@ -112,7 +139,7 @@
     width: 100%;
 }
 
-.form-textfield label {
+label {
     font-size: var(--text-s);
 }
 
@@ -136,7 +163,7 @@ input, textarea, select {
     box-sizing: border-box;
 }
 
-/* required field indicator */
+/* astericks as required field indicator */
 .form-textfield label::after {
     content: " *";
     color: var(--color-sale);
@@ -146,6 +173,12 @@ input, textarea, select {
     margin-left: 0;
 }
 
+/* heading including the back button on the same line */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* === Checkout step progress bar ========================================== */
 
 .progress-bar {
@@ -219,6 +252,7 @@ input, textarea, select {
 /* product price */
 .checkout-product span {
     grid-column: 3;
+    grid-row: 3;
     align-self: end;
     justify-self: end;
 }
@@ -226,6 +260,7 @@ input, textarea, select {
 /* unadjustable quantity number */
 .quantity {
     grid-column: 2;
+    grid-row: 3;
     align-self: end;
 }
 
@@ -233,7 +268,7 @@ input, textarea, select {
     display: flex;
     height: 100%;
     width: 100%;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
 .checkout-product-image img {
@@ -270,15 +305,60 @@ input, textarea, select {
     grid-column: 2;
 }
 
+.quantity {
+    align-self: center;
+}
+
+/* plus and minus buttons */
 .quantity-group button {
     height: 25px;
     width: 25px;
+    font-size: var(--text-l);
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     border-radius: 50%;
     border: none;
     background-color: var(--grey-2);
+    margin: 0 var(--space-xs);
+    cursor: pointer;
+}
+
+.remove-button {
+    background-color: var(--color-checkout-box);
+    border-radius: var(--corner-round);
+    border: none;
+    color: var(--white);
+
+    font-weight: bold;
+    font-size: var(--text-l);
+    height: 30px;
+}
+
+.remove-button:hover {
+    background-color: var(--grey-5);
+    cursor: pointer;
+}
+
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.discount-textfield input {
+    width: 100%;
+    align-self: flex-end;
+}
+
+.discount button {
+    width:38%;
+    height: 40px;
+    align-self: flex-end;
+    margin-bottom: var(--space-xs);
 }
 
 /* === Text Alignment ====================================================== */
@@ -314,7 +394,7 @@ input, textarea, select {
 
 /* moves secondary form to second column */
 @media screen and (min-width: 933px) {
-    .centered {
+    .form-group {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -331,6 +411,12 @@ input, textarea, select {
 
     .form-secondary {
         width: 40%;
+    }
+
+    /* single column */
+    .form-centered {
+        display: flex;
+        justify-content: center;
     }
 
     /* row of payment option buttons  */
