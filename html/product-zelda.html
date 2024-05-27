@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="../css/colours.css">
     <link rel="stylesheet" type="text/css" href="../css/typography.css">
     <link rel="stylesheet" type="text/css" href="../css/form.css">
-
 </head>
 <body>
     <header class="centered">
@@ -83,97 +82,117 @@
         </a>
     </nav>
 
-    <main class="centered form-group">
-       <section class="section-box form">
-        <div class="form-header">
-            <p class="checkout-heading">Checkout</p>
-            <a href="./checkout.html">
-                <button class="back-button">Back to Shipping</button>
-            </a>
-        </div>
-            <div class="progress-bar">
-                <div class="progress-bar-dot">
-                    <span class="dot fill"></span>
-                    <div>Shipping</div>
-                </div>
-                <hr class="progress-line">
-                <div class="progress-bar-dot">
-                    <span class="dot fill"></span>
-                    <div>Payment</div>
-                </div>
-                <hr class="progress-line inactive">
-                <div class="progress-bar-dot inactive">
-                    <span class="dot unfill"></span>
-                    <div">Completed</div>
-                </div>
-            </div>
-            <p class="subheading">How would you like to pay?</p>
-            <div class="payment">
-                <div class="checkout-options apple">
-                    <img src="../images/brands/apple-logo.svg" alt="Apple logo">
-                    <div class="apple-pay">Apple Pay</div>
-                </div>
-                <div class="checkout-options">
-                    <img src="../images/brands/google-logo.png" alt="Google logo">
-                    <div class="google-pay">Google Pay</div>
-                </div>
-                <div class="checkout-options">
-                    <img src="../images/icons/credit-card.png" alt="">
-                    <div class="credit">Credit/Debit Card</div>
-                </div>
-                <div class="checkout-options">
-                    <img src="../images/brands/paypal-logo.svg" alt="Paypal">
-                </div>
-            </div>
-            <form action="confirmation.html">
-                <div class="form-textfield-group">
-                    <div class="form-textfield large-input">
-                        <label>Name on Card</label>
-                        <input type="text" >
+    <main class="centered">
+
+        <button class="button-primary product-button" type="button">Add to Cart</button>
+
+        <section class="section-box">
+            <span class="link-to-page">
+                <h2> <a href="../index.html">Home</a> / Nintendo / <a href="../html/search.html">3DS</a> / Legend of Zelda: Ocarina of Time</h2>
+            </span>
+
+            <div class="product">
+                <div>
+                    <div class="product-panel centered">
+                        <img class="product-image" src="../images/games/zelda-ocarina-of-time/the-legend-of-zelda-ocarina-of-time-3ds.webp" alt="Ocarina of Time for 3DS">
+                        <div class="product-image-secondary centered">
+                            <img class="product-image" src="../images/games/zelda-ocarina-of-time/zelda-oot-banner.jpg" alt="Cover of Ocarina of Time">
+                            <img class="product-image" src="../images/games/zelda-ocarina-of-time/ocarina-story-scene.avif" alt="Scene from the story">
+                            <img class="product-image" src="../images/games/zelda-ocarina-of-time/ocarina-gameplay.webp" alt="Gameplay showing HUD and graphics">
+                        </div>
                     </div>
-                    <div class="form-textfield mid-input">
-                        <label>Card Number</label>
-                        <input type="text">
+                </div>
+                <div class="product-box">
+                    <div>
+                        <div class="product-name">The Legend of Zelda: Ocarina of Time</div>
+                        <div class="product-price">$49</div>
+                        <button class="button-primary product-button-desktop" type="button">Add to Cart</button>
                     </div>
-                    <div class="form-textfield xsmall-input">
-                        <label>Expiry Date</label>
-                        <input type="text">
+        
+                    <span class="title">
+                        <h2>Product Description</h2>
+                        <div class="title-break centered"><hr></div>
+                    </span>
+                    <p class="product-text">
+                        The player controls the series' trademark hero, Link, 
+                        in the land of Hyrule. Link sets out on a quest to 
+                        stop Ganondorf, King of the Gerudo tribe, from 
+                        obtaining the Triforce, a sacred relic that grants 
+                        the wishes of its holder. Link travels back and forth 
+                        through time and navigates various dungeons to awaken 
+                        sages who have the power to seal Ganondorf away. Music 
+                        plays an important role—to progress, the player must 
+                        learn to play and perform several songs on an ocarina.
+                    </p>
+                </div>
+            </div>
+        </section> 
+    
+        <section class="section-box">
+            
+            <span class="title">
+                <h2>You May Also Like</h2>
+                <div class="title-break centered"><hr></div>
+            </span>
+
+            <span class="content-box">
+                <div class="product-card">
+                    <div class="product-card-image centered">
+                        <img src="../images/games/pikmin.webp" alt="Pikmin cover">
                     </div>
-                    <div class="form-textfield xsmall-input">
-                        <label>CVC</label>
-                        <input type="text">
-                    </div>   
+                    <div class="product-card-detail">
+                        <div>
+                            <hr>
+                            <p class="product-price">$45</p>
+                            <p>Pikmin</p>
+                        </div>
+                    </div>               
                 </div>
-            </form>
-       </section>
-       <section class="section-box form form-secondary">
-            <div class="checkout-product">
-                <div class="checkout-product-image" >
-                    <img src="../images/games/mario-golf-toadstool-tour/mario-golf-toadstool-tour.webp" alt="Mario Golf: Toadstool Tour">
+
+                <div class="product-card">
+                    <div class="product-card-image centered">
+                        <img src="../images/games/pikmin-2.webp" alt="Pikmin 2 cover">
+                    </div>
+                    <div class="product-card-detail">
+                        <div>
+                            <hr>
+                            <p class="product-price">$85</p>
+                            <p>Pikmin 2</p>
+                        </div>
+                    </div>               
                 </div>
-                <p class="checkout-product-title">Mario Golf: Toadstool Tour for Gamecube</p>
-                <p class="quantity">Quantity: 1</p>
-                <span>$25</span>
-            </div>
-        <hr class="hr-dashed">
-            <div class="checkout-product">
-                <div class="checkout-product-image" >
-                    <img src="../images/games/pokemon-ds/pokemon-black.webp" alt="Pokemon Black for DS">
+
+                <a href="../html/product-pokemon.html" class="product-card">
+                    <div class="product-card-image centered">
+                        <img src="../images/games/pokemon-ds/pokemon-black.webp" alt="Pokemon Black cover">
+                    </div>
+                    <div class="product-card-detail">
+                        <div>
+                            <hr>
+                            <p class="product-price">$89</p>
+                            <p>Pokemon Black</p>
+                        </div>
+                    </div>               
+                </a>
+
+                <div class="product-card">
+                    <div class="product-card-image centered">
+                        <img src="../images/games/mario-party-4.webp" alt="Mario Party 4 cover">
+                    </div>
+                    <div class="product-card-detail">
+                        <div>
+                            <hr>
+                            <p class="product-price">$70</p>
+                            <p>Mario Party 4</p>
+                        </div>
+                    </div>               
                 </div>
-                <p class="checkout-product-title">Pokemon Black for Nintendo DS</p>
-                <p class="quantity">Quantity: 1</p>
-                <span>$89</span>
-            </div>
-        <hr class="hr-dashed">
-            <p class="checkout-total">Shipping<span>$0</span></p>
-        <hr class="hr-dashed">
-            <p class="checkout-total">Discount<span>$0</span></p>
-        <hr>
-            <p class="checkout-total total">Total <span>$144</span></p>
-        <a href="../html/confirmation.html">
-            <button class="button-primary checkout-button">Complete Payment</button>
-        </a>
-       </section>
+            </span>
+        </section>
+
+        <span class="title">
+            <hr class="section-break">
+        </span>
     </main>
 
     <footer class="footer centered">
@@ -226,6 +245,10 @@
         </div>
     </footer>
 
+    <nav class="nav-space">
+    </nav>
+
+    <!-- extra space for button -->
     <nav class="nav-space">
     </nav>
 

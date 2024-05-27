@@ -246,6 +246,8 @@ input, textarea, select {
 }
 
 .checkout-product-title {
+    font-weight: 700;
+    
     grid-column: span 2;
 }
 
@@ -298,14 +300,21 @@ input, textarea, select {
     margin-top: 0;
 }
 
+.cart-price {
+    align-items: start
+    ;
+}
+
 /* quantity changing buttons on cart products */
 .quantity-group {
     display: flex;
-    align-items: end;
+    align-items: center;
     grid-column: 2;
 }
 
 .quantity {
+    font-size: var(--text-xl);
+    font-weight: 1000;
     align-self: center;
 }
 
@@ -315,15 +324,13 @@ input, textarea, select {
     width: 25px;
     font-size: var(--text-l);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     border-radius: 50%;
     border: none;
     background-color: var(--grey-2);
     margin: 0 var(--space-xs);
     cursor: pointer;
+
+    box-shadow: 0 1px 5px var(--grey-5);
 }
 
 .remove-button {
@@ -335,6 +342,8 @@ input, textarea, select {
     font-weight: bold;
     font-size: var(--text-l);
     height: 30px;
+
+    box-shadow: 2px 2px 5px var(--grey-5);
 }
 
 .remove-button:hover {
