@@ -32,7 +32,7 @@ function setPriceSize() {
 
     function resize() {
         if (this.value.length < 5) {
-            this.style.width = (this.value.length) + "ch"; // Add 1ch to avoid cutting off the last character
+            this.style.width = (this.value.length) + "ch";
         }
     }
 }
