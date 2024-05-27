@@ -17,14 +17,14 @@
 
         <!-- Menu list for desktop mode -->
         <div class="menu-list">
-            <p class="menu-item">Shop</p>
-            <p class="menu-item">Trade In</p>
-            <p class="menu-item">Contact</p>
-            <p class="menu-item">About Us</p>
+            <a class="menu-item" href="../html/search.html">Shop</a>
+            <a class="menu-item" href="../index.html">Trade In</a>
+            <a class="menu-item" href="../index.html">Contact</a>
+            <a class="menu-item" href="../html/about-us.html">About Us</a>
         </div>
 
         <!-- Logo anchor to return to homepage -->
-        <a href="../index.html">
+        <a class="center" href="../index.html">
             <img class="logo" src="../images/logo.svg" alt="Maxx Gaming Logo">
         </a>
         
@@ -32,17 +32,25 @@
         <div class="menu-list">
             <a href="../html/search.html" class="search-bar truncate">
                 <img class="search-icon" 
-                     src="../images/icons/search.png" 
-                     alt="search icon">
-                <p class="search-products truncate">Gamecube</p>
+                    src="../images/icons/search.png" 
+                    alt="search icon">
+                <p class="search-products truncate">Search 570 Products</p>
             </a>
             <span class="icon-box">
-                <img class="icon menu-icon" 
-                     src="../images/icons/shopping_cart.png" 
-                     alt="shopping cart icon">
-                <img class="icon menu-icon" 
-                     src="../images/icons/profile.png"
-                     alt="profile icon">
+                <a href="../html/cart.html" class="shopping-cart">
+                    <img class="icon menu-icon" 
+                        src="../images/icons/shopping_cart.png" 
+                        alt="shopping cart icon">
+                        <span class="cart-count">
+                            <div class="centered">0</div>
+                        </span>
+
+                </a>
+                <a href="../index.html">
+                    <img class="icon menu-icon" 
+                        src="../images/icons/profile.png"
+                        alt="profile icon">
+                </a>
             </span>
         </div>
     </header>
@@ -56,17 +64,20 @@
         <a class="centered" href="../html/search.html">
             <img class="icon" 
                 src="../images/icons/search.png" 
-                alt="shopping cart icon">
+                alt="search icon">
         </a>
-        <a class="centered" href="../html/cart.html">
+        <a class="shopping-cart centered" href="../html/cart.html">
             <img class="icon" 
                 src="../images/icons/shopping_cart.png" 
                 alt="shopping cart icon">
+                <span class="cart-count">
+                    <div class="centered">0</div>
+                </span>
         </a>
         <a class="centered" href="../index.html">
             <img class="icon" 
                 src="../images/icons/profile.png" 
-                alt="shopping cart icon">
+                alt="profile icon">
         </a>
     </nav>
 

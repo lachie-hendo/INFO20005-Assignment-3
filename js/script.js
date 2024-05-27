@@ -17,7 +17,7 @@ function setProductDescriptionHeight() {
         } else {
             productDescription.forEach(function(product) {
                 product.style.height = 'auto';
-            });
+            }); 
         }
     }
 }
@@ -36,6 +36,29 @@ function setPriceSize() {
         }
     }
 }
+
+function updateShoppingCart() {
+
+    let cartCountElement = document.querySelectorAll('.cart-count .centered');
+    cartCountElement.forEach(element => {
+        let cartCount = Number(element.textContent);
+        console.log(cartCount);
+        cartCount += 1;
+        element.textContent = cartCount;
+    });
+
+    let cart = document.querySelectorAll('.cart-count');
+    cart.forEach(function(element) {
+        element.style.display = 'inline';
+    });
+}
+
+/* add event listener to 'Add to Cart' buttons */
+addToCart = document.querySelectorAll('.button-primary');
+
+addToCart.forEach(function(button) {
+    button.addEventListener('click', updateShoppingCart);
+});
 
 document.addEventListener('DOMContentLoaded', setPriceSize);
 

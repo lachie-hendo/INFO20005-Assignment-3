@@ -33,17 +33,21 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
         
         <!-- Menu list for desktop mode -->
         <div class="menu-list">
-            <a href="../html/search.html" class="search-bar truncate">
+            <a href="html/search.html" class="search-bar truncate">
                 <img class="search-icon" 
                     src="images/icons/search.png" 
                     alt="search icon">
                 <p class="search-products truncate">Search 570 Products</p>
             </a>
             <span class="icon-box">
-                <a href="html/cart.html">
+                <a href="html/cart.html" class="shopping-cart">
                     <img class="icon menu-icon" 
                         src="images/icons/shopping_cart.png" 
                         alt="shopping cart icon">
+                        <span class="cart-count">
+                            <div class="centered">0</div>
+                        </span>
+
                 </a>
                 <a href="index.html">
                     <img class="icon menu-icon" 
@@ -65,10 +69,13 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
                 src="images/icons/search.png" 
                 alt="search icon">
         </a>
-        <a class="centered" href="html/cart.html">
+        <a class="shopping-cart centered" href="html/cart.html">
             <img class="icon" 
                 src="images/icons/shopping_cart.png" 
                 alt="shopping cart icon">
+                <span class="cart-count">
+                    <div class="centered">0</div>
+                </span>
         </a>
         <a class="centered" href="index.html">
             <img class="icon" 
@@ -330,5 +337,7 @@ css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;
     
     <nav class="nav-space">
     </nav>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
