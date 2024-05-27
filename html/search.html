@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxx Gaming</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="../fonts/johnny-fever.otf">
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/colours.css">
+    <link rel="stylesheet" type="text/css" href="../css/typography.css">
+</head>
+<body>
+    <header class="centered">
+
+        <!-- Menu list for desktop mode -->
+        <div class="menu-list">
+            <p class="menu-item">Shop</p>
+            <p class="menu-item">Trade In</p>
+            <p class="menu-item">Contact</p>
+            <p class="menu-item">About Us</p>
+        </div>
+
+        <!-- Logo anchor to return to homepage -->
+        <a href="../index.html">
+            <img class="logo" src="../images/logo.svg" alt="Maxx Gaming Logo">
+        </a>
+        
+        <!-- Menu list for desktop mode -->
+        <div class="menu-list">
+            <a href="../html/search.html" class="search-bar truncate">
+                <img class="search-icon" 
+                     src="../images/icons/search.png" 
+                     alt="search icon">
+                <p class="search-products truncate">Gamecube</p>
+            </a>
+            <span class="icon-box">
+                <img class="icon menu-icon" 
+                     src="../images/icons/shopping_cart.png" 
+                     alt="shopping cart icon">
+                <img class="icon menu-icon" 
+                     src="../images/icons/profile.png"
+                     alt="profile icon">
+            </span>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <a class="centered" href="index.html">
+            <img class="icon" 
+                src="../images/icons/menu.png" 
+                alt="menu icon">
+        </a>
+        <a class="centered" href="index.html">
+            <img class="icon" 
+                src="../images/icons/search.png" 
+                alt="shopping cart icon">
+        </a>
+        <a class="centered" href="index.html">
+            <img class="icon" 
+                src="../images/icons/shopping_cart.png" 
+                alt="shopping cart icon">
+        </a>
+        <a class="centered" href="index.html">
+            <img class="icon" 
+                src="../images/icons/profile.png" 
+                alt="shopping cart icon">
+        </a>
+    </nav>
+
+    <main class="centered">
+
+        <section class="search-box">
+            <section class="filter-box">
+                <span class="title">
+                    <h2>Filters</h2>
+                    <div class="title-break centered"><hr></div>
+                </span>
+
+                <form action="../html/search.html" class="filter-form">
+                    <fieldset class="filters">
+                        <div>
+                            <h2 class="filter-title">Brands</h2>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Sony" id="Sony">
+                                    <label class="filter-label" for="Sony">Sony</label>
+                                </div>
+                                <p class="filter-number">64</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Nintendo" id="Nintendo" checked="checked">
+                                    <label class="filter-label" for="Nintendo">Nintendo</label>
+                                </div>
+                                <p class="filter-number">81</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Microsoft" id="Microsoft">
+                                    <label class="filter-label" for="Microsoft">Microsoft</label>
+                                </div>
+                                <p class="filter-number">12</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Epic-Games" id="Epic-Games">
+                                    <label class="filter-label" for="Epic-Games">Epic Games</label>
+                                </div>
+                                <p class="filter-number">6</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Capcom" id="Capcom">
+                                    <label class="filter-label" for="Capcom">Capcom</label>
+                                </div>
+                                <p class="filter-number">12</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Sega" id="Sega">
+                                    <label class="filter-label" for="Sega">Sega</label>
+                                </div>
+                                <p class="filter-number">40</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Atari" id="Atari">
+                                    <label class="filter-label" for="Atari">Atari</label>
+                                </div>
+                                <p class="filter-number">19</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Bandai-Namco" id="Bandai-Namco">
+                                    <label class="filter-label" for="Bandai-Namco">Bandai Namco</label>
+                                </div>
+                                <p class="filter-number">8</p>
+                            </div>
+                        </div>
+    
+                        <span class="title">
+                            <hr class="filter-break">
+                        </span>
+    
+                        <div>
+                            <h2 class="filter-title">Price</h2>
+                            <div class="filter-prices">
+                                <div class="min-price centered">
+                                    <p>from <b>$</b></p>
+                                    <input class="price-input" type="text" value="1" id="min" name="min" min="1" max="5000">
+                                    <p>AUD</p>
+                                </div>
+    
+                                <div class="max-price centered">
+                                    <p>to <b>$</b></p>
+                                    <input class="price-input" type="text" value="5000" id="max" name="max" min="1" max="5000">
+                                    <p>AUD</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <span class="title">
+                            <hr class="filter-break">
+                        </span>
+    
+                        <div>
+                            <h2 class="filter-title">Console</h2>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Gamecube" id="Gamecube" checked="checked">
+                                    <label class="filter-label" for="Gamecube">Gamecube</label>
+                                </div>
+                                <p class="filter-number">50</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Nintendo-64" id="Nintendo-64">
+                                    <label class="filter-label" for="Nintendo-64">Nintendo 64</label>
+                                </div>
+                                <p class="filter-number">4</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="Wii" id="Wii">
+                                    <label class="filter-label" for="Wii">Wii</label>
+                                </div>
+                                <p class="filter-number">12</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="DS" id="DS">
+                                    <label class="filter-label" for="DS">DS</label>
+                                </div>
+                                <p class="filter-number">9</p>
+                            </div>
+                            <div class="filter-option">
+                                <div class="filter-input">
+                                    <input class="filter-checkbox" type="checkbox" name="Brand" value="3DS" id="3DS">
+                                    <label class="filter-label" for="3DS">3DS</label>
+                                </div>
+                                <p class="filter-number">6</p>
+                            </div>
+                        </div>
+    
+                        <button type="submit" class="button-primary filter-button">Filter</button>
+    
+                    </fieldset>
+                </form>
+            </section>
+
+            <span class="title">
+                <hr class="vertical-break">
+            </span>
+
+            <section>
+                <span class="search-page-bar truncate">
+                    <img class="search-icon" 
+                         src="../images/icons/search.png" 
+                         alt="search icon">
+                    <p class="search-products truncate">Gamecube</p>
+                </span>
+                
+                <div class="search-page-filters">
+                    <img class="menu-icon icon" src="../images/icons/filter.png" alt="filter icon">
+                    <img class="menu-icon icon" src="../images/icons/sort.png" alt="filter icon">
+                </div>
+
+
+                <span class="title">
+                    <h2>Showing 12 of 50 Results</h2>
+                    <div class="title-break centered"><hr></div>
+                </span>
+
+                <span class="search-product-box">
+                    <a class="product-card" href="../html/product.html">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/mario-golf-toadstool-tour/mario-golf-toadstool-tour.webp" alt="Mario Golf: Toadstool Tour cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$25</p>
+                                <p>Mario Golf: Toadstool Tour</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>           
+                    </a>
+
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/pikmin.webp" alt="Pikmin cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$45</p>
+                                <p>Pikmin</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>               
+                    </div>
+    
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/pikmin-2.webp" alt="Pikmin 2 cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$85</p>
+                                <p>Pikmin 2</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>               
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/the-hobbit.webp" alt="The Hobbit cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$35</p>
+                                <p>The Hobbit</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>                 
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/aggressive-inline.webp" alt="Aggressive inline cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>  
+                                <hr>
+                                <p class="product-price">$19</p>
+                                <p>Aggressive Inline</p>
+                            </div>
+                            <button class="button-sold add-product">Sold Out</button>
+                        </div>    
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/enter-the-matrix.webp" alt="Enter the matrix cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$19</p>
+                                <p>Enter The Matrix</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>                 
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/finding-nemo.webp" alt="Finding nemo cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$6</p>
+                                <p>Finding Nemo</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>                 
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/fifa-football-2004.webp" alt="FIFA Football cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$15</p>
+                                <p>FIFA Football 2004</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>                 
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/mario-party-4.webp" alt="Mario party 4 cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$70</p>
+                                <p>Mario Party 4</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>                 
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/animal-crossing.webp" alt="Animal Crossing cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$170</p>
+                                <p>Animal Crossing</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>                 
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/the-legend-of-zelda-the-wind-waker.webp" alt="The legend of zelda: the wind waker cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$95</p>
+                                <p>Zelda: The Wind Waker</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>                 
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-image centered">
+                            <img src="../images/games/super-smash-bros-melee.webp" alt="Super smash bros. melee cover">
+                        </div>
+                        <div class="product-card-detail">
+                            <div>
+                                <hr>
+                                <p class="product-price">$79</p>
+                                <p>Super Smash Bros. Melee</p>
+                            </div>
+                            <button class="button-primary add-product">Add to Cart</button>
+                        </div>                 
+                    </div>
+                </span>
+            </section>
+        </section> 
+
+        <span class="title">
+            <hr class="section-break">
+        </span>
+    </main>
+
+    <footer class="footer centered">
+        <div class="socials centered">
+            <p class="footer-title centered"> Follow Us!</p>
+            <img class="icon footer-icon" src="../images/icons/instagram-icon.png" alt="instagram icon">
+            <img class="icon footer-icon" src="../images/icons/facebook-icon.webp" alt="facebook icon">
+            <img class="icon footer-icon" src="../images/icons/linkedin.webp" alt="linkedin icon">
+        </div>
+        <div class="links">
+            <div class="policies">
+                <div class="footer-title"> Policies</div>
+                <div class="footer-policies centered"> Privacy Policy</div>
+                <div class="footer-policies centered"> Terms and Conditions</div>
+                <div class="footer-policies centered"> Returns and Refunds</div>
+                <div class="footer-policies centered"> Shipping</div>
+                <div class="footer-policies centered"> Terms of Service</div>
+            </div>
+            <div class="contacts">
+                <div class="contacts-2">
+                    <div class="footer-title"> Contact</div>
+                    <div class="contact-section">
+                        <div class="contact-box">
+                            <div class="footer-bold"> Email</div>
+                            <div class="footer-content"> admin@maxxgaming.com.au</div>
+                            <div class="footer-bold"> Phone</div>
+                            <div class="footer-content"> 0424777958</div>
+                        </div>
+        
+                        <div class="contact-box-2">
+                            <div class="footer-bold"> ABN</div>
+                            <div class="footer-content"> 84 985 428 674 104</div>
+                            <div class="footer-bold"> Postal Address</div>
+                            <div class="footer-content"> Mcbryde Street Fawkner,</div>
+                            <div class="footer-content"> Melbourne</div>
+                            <div class="footer-content"> 3060, Australia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment-icons centered">
+            <img class="payment-icon" src="../images/icons/visa-logo.png" alt="visa logo">
+            <img class="payment-icon" src="../images/icons/mastercard-logo.png" alt="mastercard logo">
+            <img class="payment-icon" src="../images/icons/amex-logo.png" alt="american express logo">
+            <img class="payment-icon" src="../images/icons/paypal.png" alt="paypal logo">
+        </div>
+        <div class="footer-text">
+            <p>2024 Retro Video Games Store Melbourne Australia | Maxx Gaming</p>
+        </div>
+    </footer>
+
+    <nav class="nav-space">
+    </nav>
+
+    <!-- extra space for button -->
+    <nav class="nav-space">
+    </nav>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
