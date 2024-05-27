@@ -10,7 +10,6 @@ body {
     line-height: 1.2;
 }
 
-
 main {
     flex-direction: column;
 }
@@ -25,7 +24,8 @@ h1 {
 
 a {
     height: 100%;
-    text-decoration:none;
+    text-decoration: none;
+    color: var(--grey-4);
 }
 
 img {
@@ -36,6 +36,10 @@ hr {
     width: 100%;
     height: 0;
     margin-left: var(--space-s);
+}
+
+b {
+    font-weight: 800;
 }
 
 /* === Header ============================================================== */
@@ -169,6 +173,7 @@ hr {
     align-items: center;
     flex: 1;
     width: 100%;
+    height: auto;
     border-style: solid;
     border-color: var(--white);
     border-radius: 5px;
@@ -332,6 +337,162 @@ hr {
 
 .bandai:hover {
     background-color: var(--color-background-bandai);
+}
+
+/* === Filter ============================================================== */
+
+.filter-form {
+    width: 100%;
+}
+
+.filter-box {
+    flex-direction: column;
+    width: 28vw;
+    min-width: 28vw;
+}
+
+.filters {
+    background-color: var(--color-background-2);
+    color: black;
+
+    width: calc(100% - 2 * var(--space-xs));
+    border-radius: var(--corner-round);
+    padding: var(--space-xs);
+}
+
+.filter-title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    padding: var(--space-xxs);
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    padding: calc(var(--space-xxs) * 0.75) calc(var(--space-xxs) * 0.75);
+}
+
+.filter-checkbox {
+    width: 2vw;
+    height: 2vw;
+    margin-right: var(--space-xs);
+}
+
+.filter-input {
+    display: flex;
+    align-items: center;
+}
+
+.filter-number {
+    font-size: var(--text-l);
+    font-weight: 800;
+}
+
+.filter-label {
+    font-size: var(--text-m);
+}
+
+.filter-break {
+    margin-left: 0;
+    border-color: var(--black);
+}
+
+.filter-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: var(--space-xxs);
+}
+
+.min-price, .max-price {
+    flex-direction: row;
+
+    font-size: var(--text-m);
+
+    width: calc(50% - 3* var(--space-xs));
+
+    border: solid black;
+    padding: var(--space-xs);
+    border-radius: var(--corner-round);
+}
+
+.price-input {
+    font-weight: 1000;
+    margin-right: var(--space-xxs);
+
+    background-color: var(--color-background-2);
+}
+
+.min-price .price-input {
+    width: 1ch;
+}
+.max-price .price-input {
+    width: 4ch;
+}
+
+.filter-button {
+    width: calc(100%);
+    font-size: var(--text-l);
+    margin: var(--space-s) 0;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    margin: var(--space-s);
+}
+
+.vertical-break {
+    width: 0;
+    height: 100%;
+    margin-right: var(--space-s);
+}
+
+.title:has(.vertical-break) {
+    width: auto;
+}
+
+.search-product-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-m);
+}
+
+.search-product-box .product-card {
+    min-width: calc(100% - 2 * var(--space-m));
+    margin: 0;
+}
+
+.add-product {
+    font-size: var(--text-l);
+    padding: var(--space-xxs);
+}
+
+.search-product-box .product-card .product-card-detail {
+    height: 40%;
+}
+
+.search-page-bar {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 2 * var(--space-xs));
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 5px;
+    padding: var(--space-xxs) var(--space-xs);
+}
+
+.search-page-filters {
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xxxl);
 }
 
 /* === Product card ======================================================== */
@@ -517,6 +678,18 @@ hr {
     border-radius: var(--corner-round);
 }
 
+.button-sold {
+    background-color: var(--color-button-unclickable);
+    color: var(--black);
+
+    font-family: var(--font-primary);
+    font-weight: 1000;
+    letter-spacing: .1em;
+
+    border: solid 2px;
+    border-radius: var(--corner-round);
+}
+
 .button-primary:hover {
     background-color: var(--color-button-primary-hover);
 }
@@ -577,6 +750,14 @@ hr {
 
     .product-button-desktop {
         display: none;
+    }
+
+    .search-box .filter-box, .search-box .title .vertical-break {
+        display: none;
+    }
+
+    .search-product-box {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -683,7 +864,11 @@ hr {
     }
 
     .product-text {   
-        overflow: scroll;
+        overflow-y: scroll;
         height: 100%;
+    }
+
+    .search-page-bar, .search-page-filters {
+        display: none;
     }
 }

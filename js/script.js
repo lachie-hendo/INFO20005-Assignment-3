@@ -22,5 +22,22 @@ function setProductDescriptionHeight() {
     }
 }
 
+function setPriceSize() {
+    let priceInputs = document.querySelectorAll('.price-input');
+
+    priceInputs.forEach(function(input) {
+        input.addEventListener('input', resize);
+        resize.call(input);
+    });
+
+    function resize() {
+        if (this.value.length < 5) {
+            this.style.width = (this.value.length) + "ch"; // Add 1ch to avoid cutting off the last character
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', setPriceSize);
+
 window.addEventListener('load', setProductDescriptionHeight);
 window.addEventListener('resize', setProductDescriptionHeight);
