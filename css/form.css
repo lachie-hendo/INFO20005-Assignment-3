@@ -153,7 +153,7 @@ input, textarea, select {
     font-family: var(--font-primary);
 
     border-radius: 3px;
-    border-width: 1px;
+    border: 1px solid black;
 }
 
 /* state selection bar */
