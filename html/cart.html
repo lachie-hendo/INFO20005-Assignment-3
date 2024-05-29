@@ -81,70 +81,24 @@
     </span>
     <main class="centered form-group">
         <section class="section-box form">
-       <div class="checkout-product-group">
-        <div class="checkout-product cart-card">
-            <div class="checkout-product-image" >
-                <img src="../images/games/mario-golf-toadstool-tour/mario-golf-toadstool-tour.webp" alt="Mario Golf: Toadstool Tour">
-            </div>
-            <p class="checkout-product-title">Mario Golf: Toadstool Tour for Gamecube</p>
-            <p class="product-price cart-price">$25</p>
-            <div class="quantity-group">
-                <button type="button" class="centered" onclick="minusQuantity(this)">
-                    <img src="../images/icons/minus.png" alt="minus symbol">
-                </button>
-                <input class="quantity" value="1"></input>
-                <button class="centered" onclick="addQuantity(this)">
-                    <img src="../images/icons/add.png" alt="addition symbol">
-                </button>
-            </div>
-            <button class="remove-button">Remove</button>
-        </div>
-        <div class="checkout-product cart-card">
-            <div class="checkout-product-image" >
-                <img src="../images/games/pokemon-ds/pokemon-black.webp" alt="Pokemon Black for DS">
-            </div>
-            <p class="checkout-product-title">Pokemon Black for Nintendo DS</p>
-            <p class="product-price cart-price">$89</p>
-            <div class="quantity-group">
-                <button type="button" class="centered" onclick="minusQuantity(this)">
-                    <img src="../images/icons/minus.png" alt="minus symbol">
-                </button>
-                <input class="quantity" value="1"></input>
-                <button type="button" class="centered" onclick="addQuantity(this)">
-                    <img src="../images/icons/add.png" alt="addition symbol">
-                </button>
-            </div>
-            <button class="remove-button">Remove</button>
-        </div>
-       </div>
-    </section>
-       <section class="section-box form form-secondary">
-        <div class="discount">
-            <div class="discount-textfield mid-input">
-                <label>Discount Code</label>
-                <input type="text">
             <div class="checkout-product-group">
                 <div class="checkout-product cart-card">
                     <div class="checkout-product-image" >
                         <img src="../images/games/mario-golf-toadstool-tour/mario-golf-toadstool-tour.webp" alt="Mario Golf: Toadstool Tour">
                     </div>
-
                     <p class="checkout-product-title">Mario Golf: Toadstool Tour for Gamecube</p>
                     <p class="product-price cart-price">$25</p>
                     <div class="quantity-group">
-                        <button class="centered">
+                        <button type="button" class="centered" onclick="minusQuantity(this)">
                             <img src="../images/icons/minus.png" alt="minus symbol">
                         </button>
-
-                        <p class="quantity centered">1</p>
-                        <button class="centered">
+                        <input class="quantity" value="1"></input>
+                        <button class="centered" onclick="addQuantity(this)">
                             <img src="../images/icons/add.png" alt="addition symbol">
                         </button>
                     </div>
-
                     <button class="remove-button">Remove</button>
                 </div>
-
                 <div class="checkout-product cart-card">
                     <div class="checkout-product-image" >
                         <img src="../images/games/pokemon-ds/pokemon-black.webp" alt="Pokemon Black for DS">
@@ -152,20 +106,19 @@
                     <p class="checkout-product-title">Pokemon Black for Nintendo DS</p>
                     <p class="product-price cart-price">$89</p>
                     <div class="quantity-group">
-                        <button class="centered">
+                        <button type="button" class="centered" onclick="minusQuantity(this)">
                             <img src="../images/icons/minus.png" alt="minus symbol">
                         </button>
-                        <p class="quantity centered">1</p>
-                        <button class="centered">
+                        <input class="quantity" value="1"></input>
+                        <button type="button" class="centered" onclick="addQuantity(this)">
                             <img src="../images/icons/add.png" alt="addition symbol">
                         </button>
                     </div>
-
                     <button class="remove-button">Remove</button>
                 </div>
             </div>
         </section>
-
+      
         <section class="section-box form form-secondary">
             <div class="discount">
                 <div class="discount-textfield mid-input">
@@ -180,20 +133,10 @@
             <p class="checkout-total">Discount<span>$0</span></p>
         <hr>
             <p class="checkout-total total">Total <span>$114</span></p>
-        <a href="./checkout.html">
-            <button class="button-primary checkout-button">Proceed to Checkout</button>
-        </a>
-       </section>
-
-            <p class="checkout-total">Subtotal<span>$144</span></p>
-            <hr class="hr-dashed">
-            <p class="checkout-total">Discount<span>$0</span></p>
-            <hr>
-            <p class="checkout-total total">Total <span>$144</span></p>
             <a href="./checkout.html">
                 <button class="button-primary checkout-button">Proceed to Checkout</button>
             </a>
-        </section>
+       </section>
     </main>
 
     <footer class="footer centered">
