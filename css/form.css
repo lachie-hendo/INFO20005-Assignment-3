@@ -63,9 +63,10 @@
 
 .payment img {
     width: auto;
-    height: 3vh;
+    height: 8vw;
     align-self: center;
     margin-right: var(--space-xs);
+    max-height: 40px;
 
 }
 
