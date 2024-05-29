@@ -84,13 +84,14 @@
     </nav>
 
     <main class="centered form-group">
-       <section class="section-box form">
-        <div class="form-header">
-            <p class="checkout-heading">Checkout</p>
-            <a href="./checkout.html">
-                <button class="back-button">Back to Shipping</button>
-            </a>
-        </div>
+        <section class="section-box form">
+            <div class="form-header">
+                <p class="checkout-heading">Checkout</p>
+                <a href="./checkout.html">
+                    <button class="back-button">Back to Shipping</button>
+                </a>
+            </div>
+
             <div class="progress-bar">
                 <div class="progress-bar-dot">
                     <span class="dot fill"></span>
@@ -107,7 +108,9 @@
                     <div">Completed</div>
                 </div>
             </div>
+
             <p class="subheading">How would you like to pay?</p>
+
             <div class="payment">
                 <div class="checkout-options apple">
                     <img src="../images/brands/apple-logo.svg" alt="Apple logo">
@@ -129,6 +132,25 @@
                 <div class="form-textfield large-input">
                     <label>Name on Card</label>
                     <input type="text">
+
+            <form action="confirmation.html">
+                <div class="form-textfield-group">
+                    <div class="form-textfield large-input">
+                        <label>Name on Card</label>
+                        <input type="text" >
+                    </div>
+                    <div class="form-textfield mid-input">
+                        <label>Card Number</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-textfield xsmall-input">
+                        <label>Expiry Date</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-textfield xsmall-input">
+                        <label>CVC</label>
+                        <input type="text">
+                    </div>   
                 </div>
                 <div class="form-textfield mid-input">
                     <label>Card Number</label>
@@ -143,34 +165,54 @@
                     <input type="text" maxlength="3">
                 </div>   
             </form>
-       </section>
-       <section class="section-box form form-secondary">
-            <div class="checkout-product">
+        </section>
+
+        <section class="section-box form form-secondary">
+            <div class="checkout-product cart-card">
                 <div class="checkout-product-image" >
                     <img src="../images/games/mario-golf-toadstool-tour/mario-golf-toadstool-tour.webp" alt="Mario Golf: Toadstool Tour">
                 </div>
+
                 <p class="checkout-product-title">Mario Golf: Toadstool Tour for Gamecube</p>
-                <p class="quantity">Quantity: 1</p>
-                <span>$25</span>
+                <p class="product-price cart-price"></p>
+                <div class="quantity-group">
+                    <p class="quantity centered">Quantity: 1</p>
+                </div>
+
+                <p class="product-price cart-price">$25</p>
             </div>
-        <hr class="hr-dashed">
-            <div class="checkout-product">
+
+            <div class="checkout-product cart-card">
                 <div class="checkout-product-image" >
                     <img src="../images/games/pokemon-ds/pokemon-black.webp" alt="Pokemon Black for DS">
                 </div>
+
                 <p class="checkout-product-title">Pokemon Black for Nintendo DS</p>
-                <p class="quantity">Quantity: 1</p>
-                <span>$89</span>
+                <p class="product-price cart-price"></p>
+                <div class="quantity-group">
+                    <p class="quantity centered">Quantity: 1</p>
+                </div>
+
+                <p class="product-price cart-price">$89</p>
             </div>
-        <hr class="hr-dashed">
+
+            <hr class="hr-dashed">
             <p class="checkout-total">Shipping<span>$0</span></p>
-        <hr class="hr-dashed">
+            <hr class="hr-dashed">
             <p class="checkout-total">Discount<span>$0</span></p>
+<<<<<<< HEAD
         <hr>
             <p class="checkout-total total">Total <span>$114</span></p>
         <a href="../html/confirmation.html">
             <button class="button-primary checkout-button">Complete Payment</button>
         </a>
+=======
+            <hr>
+            <p class="checkout-total total">Total <span>$144</span></p>
+            <a href="../html/confirmation.html">
+                <button class="button-primary checkout-button">Complete Payment</button>
+            </a>
+>>>>>>> bb93a5f31eb952604cafed36f9dbcc8237309eff
        </section>
     </main>
 
