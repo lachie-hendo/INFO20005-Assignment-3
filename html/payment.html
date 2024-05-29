@@ -125,25 +125,23 @@
                     <img src="../images/brands/paypal-logo.svg" alt="Paypal">
                 </div>
             </div>
-            <form action="confirmation.html">
-                <div class="form-textfield-group">
-                    <div class="form-textfield large-input">
-                        <label>Name on Card</label>
-                        <input type="text" >
-                    </div>
-                    <div class="form-textfield mid-input">
-                        <label>Card Number</label>
-                        <input type="text">
-                    </div>
-                    <div class="form-textfield xsmall-input">
-                        <label>Expiry Date</label>
-                        <input type="text">
-                    </div>
-                    <div class="form-textfield xsmall-input">
-                        <label>CVC</label>
-                        <input type="text">
-                    </div>   
+            <form id="form-textfield-group" >
+                <div class="form-textfield large-input">
+                    <label>Name on Card</label>
+                    <input type="text">
                 </div>
+                <div class="form-textfield mid-input">
+                    <label>Card Number</label>
+                    <input type="text" maxlength="16">
+                </div>
+                <div class="form-textfield xsmall-input">
+                    <label>Expiry Date</label>
+                    <input type="text" placeholder="MM/YYYY">
+                </div>
+                <div class="form-textfield xsmall-input">
+                    <label>CVC</label>
+                    <input type="text" maxlength="3">
+                </div>   
             </form>
        </section>
        <section class="section-box form form-secondary">
@@ -169,7 +167,7 @@
         <hr class="hr-dashed">
             <p class="checkout-total">Discount<span>$0</span></p>
         <hr>
-            <p class="checkout-total total">Total <span>$144</span></p>
+            <p class="checkout-total total">Total <span>$114</span></p>
         <a href="../html/confirmation.html">
             <button class="button-primary checkout-button">Complete Payment</button>
         </a>

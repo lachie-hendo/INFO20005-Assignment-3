@@ -15,14 +15,9 @@
     font-size: var(--text-l);
 }
 
-/* to change button appearance once clicked !! doesn't work!! */
-.checkout-options:focus {
-    background-color: var(--color-checkout-box);
-    color: var(--color-text-primary);
-}
-
 .checkout-options:hover {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary-soft);
+    color: var(--white);
 }
 
 /* delivery provider on right of button */
@@ -102,7 +97,7 @@
 
 /* background container for checkout and completion */
 .form {
-    background-color: var(--color-checkout-box-2);
+    background-color: white;
     color: var(--color-text-secondary);
 
     margin: var(--space-s);
@@ -115,7 +110,7 @@
 }
 
 /* form input container */
-.form-textfield-group {
+#form-textfield-group {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -289,7 +284,7 @@ input, textarea, select {
 
 /* coloured product overview panel */
 .cart-card {
-    background-color: var(--color-primary-light);
+    background-color: var(--white);
     border-radius: 5px;
     box-shadow: 0 5px 0.5em rgb(0, 0, 0, 0.25); /* need to make box shadow into a variable */
     margin: var(--space-s) 0 var(--space-s) 0;
@@ -312,10 +307,19 @@ input, textarea, select {
     grid-column: 2;
 }
 
+
 .quantity {
     font-size: var(--text-xl);
     font-weight: 1000;
     align-self: center;
+    width: auto;
+    border: none;
+    background-color: inherit;
+}
+
+.quantity-group input {
+    width: 30px;
+    padding-left: 9px;
 }
 
 /* plus and minus buttons */
@@ -344,6 +348,7 @@ input, textarea, select {
     height: 30px;
 
     box-shadow: 2px 2px 5px var(--grey-5);
+    align-self: center;
 }
 
 .remove-button:hover {
