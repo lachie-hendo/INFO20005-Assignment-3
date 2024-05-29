@@ -56,7 +56,6 @@ b {
 .footer {
     flex-direction: column;
     font-size: var(--text-m);
-
 }
 
 .policies {
@@ -81,7 +80,6 @@ b {
 
 .footer-title {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: var(--text-xl);
     font-family: var(--font-secondary);
@@ -891,5 +889,9 @@ b {
 
     .search-page-bar, .search-page-filters {
         display: none;
+    }
+
+    .footer-title {
+        justify-content: center;
     }
 }
