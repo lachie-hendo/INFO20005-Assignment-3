@@ -53,8 +53,21 @@ function updateShoppingCart() {
     });
 }
 
+/* quantity increment and decrement button for products in cart */
+function addQuantity(button) {
+    let quantityInput = button.closest(".quantity-group").querySelector(".quantity");
+    quantityInput.value = parseInt(quantityInput.value) + 1;
+}
+
+function minusQuantity(button) {
+    let quantityInput = button.closest(".quantity-group").querySelector(".quantity");
+    if (quantityInput.value > 1) {
+    quantityInput.value = parseInt(quantityInput.value) - 1;
+    }
+}
+
 /* add event listener to 'Add to Cart' buttons */
-addToCart = document.querySelectorAll('.button-primary');
+addToCart = document.querySelectorAll('.add-to-cart');
 
 addToCart.forEach(function(button) {
     button.addEventListener('click', updateShoppingCart);
