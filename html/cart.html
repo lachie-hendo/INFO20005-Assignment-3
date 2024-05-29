@@ -5,50 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxx Gaming</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap">
-    <link rel="stylesheet" type="text/css" href="../fonts/johnny-fever.otf">
-
+    <link rel="stylesheet" type="text/css" href="https://fonts.cdnfonts.com/css/johnny-fever">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico?">
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/colours.css">
     <link rel="stylesheet" type="text/css" href="../css/typography.css">
     <link rel="stylesheet" type="text/css" href="../css/form.css">
 </head>
+
 <body>
     <header class="centered">
 
         <!-- Menu list for desktop mode -->
         <div class="menu-list">
-            <a class="menu-item" href="../html/search.html">Shop</a>
-            <a class="menu-item" href="../index.html">Trade In</a>
-            <a class="menu-item" href="../index.html">Contact</a>
-            <a class="menu-item" href="../html/about-us.html">About Us</a>
+            <a class="menu-item" href="../html/search.html">shop</a>
+            <a class="menu-item" href="../index.html">trade in</a>
+            <a class="menu-item" href="../index.html">contact</a>
+            <a class="menu-item" href="../html/about-us.html">about us</a>
         </div>
 
         <!-- Logo anchor to return to homepage -->
-        <a href="../index.html">
+        <a class="centered" href="../index.html">
             <img class="logo" src="../images/logo.svg" alt="Maxx Gaming Logo">
         </a>
         
         <!-- Menu list for desktop mode -->
         <div class="menu-list">
-            <a href="../html/search.html" class="search-bar truncate">
+            <a class="search-bar" href="../html/search.html">
                 <img class="search-icon" 
-                     src="../images/icons/search.png" 
-                     alt="search icon">
+                    src="../images/icons/search.png" 
+                    alt="search icon">
                 <p class="search-products truncate">Search 570 Products</p>
             </a>
-            <span class="icon-box">
-                <a href="../html/cart.html">
+            <div class="icon-box">
+                <a class="shopping-cart" href="../html/cart.html">
                     <img class="icon menu-icon" 
                         src="../images/icons/shopping_cart.png" 
                         alt="shopping cart icon">
+                    <div class="cart-count">
+                        <div class="centered">0</div>
+                    </div>
+
                 </a>
                 <a href="../index.html">
                     <img class="icon menu-icon" 
                         src="../images/icons/profile.png"
                         alt="profile icon">
                 </a>
-            </span>
+            </div>
         </div>
     </header>
 
@@ -61,24 +66,28 @@
         <a class="centered" href="../html/search.html">
             <img class="icon" 
                 src="../images/icons/search.png" 
-                alt="shopping cart icon">
+                alt="search icon">
         </a>
-        <a class="centered" href="../html/cart.html">
+        <a class="shopping-cart centered" href="../html/cart.html">
             <img class="icon" 
                 src="../images/icons/shopping_cart.png" 
                 alt="shopping cart icon">
+            <div class="cart-count">
+                <div class="centered">0</div>
+            </div>
         </a>
         <a class="centered" href="../index.html">
             <img class="icon" 
                 src="../images/icons/profile.png" 
-                alt="shopping cart icon">
+                alt="profile icon">
         </a>
     </nav>
 
-    <span class="title">
-        <h2>Your Cart</h2>
+    <div class="title">
+        <h2>your cart</h2>
         <div class="title-break centered"><hr></div>
-    </span>
+    </div>
+
     <main class="centered form-group">
         <section class="section-box form">
             <div class="checkout-product-group">
@@ -99,6 +108,7 @@
                     </div>
                     <button class="remove-button">Remove</button>
                 </div>
+
                 <div class="checkout-product cart-card">
                     <div class="checkout-product-image" >
                         <img src="../images/games/pokemon-ds/pokemon-black.webp" alt="Pokemon Black for DS">
@@ -123,7 +133,7 @@
             <div class="discount">
                 <div class="discount-textfield mid-input">
                     <label>Discount Code</label>
-                    <input type="text">
+                    <input class="form-input" type="text">
                 </div>
 
                 <button type="button" class="button-primary">Apply Code</button>
@@ -141,14 +151,14 @@
 
     <footer class="footer centered">
         <div class="socials centered">
-            <p class="footer-title centered"> Follow Us!</p>
+            <p class="footer-title centered"> follow us!</p>
             <img class="icon footer-icon" src="../images/icons/instagram-icon.png" alt="instagram icon">
             <img class="icon footer-icon" src="../images/icons/facebook-icon.webp" alt="facebook icon">
             <img class="icon footer-icon" src="../images/icons/linkedin.webp" alt="linkedin icon">
         </div>
         <div class="links">
             <div class="policies">
-                <div class="footer-title"> Policies</div>
+                <div class="footer-title"> policies</div>
                 <div class="footer-policies centered"> Privacy Policy</div>
                 <div class="footer-policies centered"> Terms and Conditions</div>
                 <div class="footer-policies centered"> Returns and Refunds</div>
@@ -157,7 +167,7 @@
             </div>
             <div class="contacts">
                 <div class="contacts-2">
-                    <div class="footer-title"> Contact</div>
+                    <div class="footer-title"> contact</div>
                     <div class="contact-section">
                         <div class="contact-box">
                             <div class="footer-bold"> Email</div>
@@ -193,6 +203,6 @@
     </nav>
 
     <script src="../js/script.js"></script>
-    <script src="../js/second-scipt.js"></script>
+    <script src="../js/authentication.js"></script>
 </body>
 </html>

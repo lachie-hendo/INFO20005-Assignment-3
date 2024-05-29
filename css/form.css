@@ -142,11 +142,9 @@ label {
 }
 
 /* individual input-fields */
-input, textarea, select {
+.form-input, textarea, select {
     min-height: 40px;
     box-sizing: border-box;
-    padding-left: 10px;
-    margin-bottom: var(--space-xs);
 
     font-family: var(--font-primary);
 
@@ -245,7 +243,7 @@ input, textarea, select {
 
 .checkout-product-title {
     font-weight: 700;
-    
+    font-size: var(--text-xl);
     grid-column: span 2;
 }
 
@@ -287,7 +285,7 @@ input, textarea, select {
 
 /* coloured product overview panel */
 .cart-card {
-    background-color: var(--white);
+    background-color: var(--color-primary-light);
     border-radius: 5px;
     box-shadow: 0 5px 0.5em rgb(0, 0, 0, 0.25); /* need to make box shadow into a variable */
     margin: var(--space-s) 0 var(--space-s) 0;
@@ -377,7 +375,6 @@ input, textarea, select {
     width:38%;
     height: 40px;
     align-self: flex-end;
-    margin-bottom: var(--space-xs);
 }
 
 /* === Text Alignment ====================================================== */
