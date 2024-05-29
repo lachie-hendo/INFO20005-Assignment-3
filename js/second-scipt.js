@@ -14,6 +14,7 @@ function minusQuantity(button) {
 //checks for empty input fields in form and returns with an alert and highlighted box//
 function validateForm() {
     let userInput = document.querySelectorAll("#form-textfield-group input");
+    let valid = true;
 
     userInput.forEach(input => {
         if (input.value == "") {
@@ -22,5 +23,5 @@ function validateForm() {
             valid = false;
         }
     });
-    return true;
+    return valid;
 }
