@@ -101,7 +101,7 @@
                         <button type="button" class="centered" onclick="minusQuantity(this)">
                             <img src="../images/icons/minus.png" alt="minus symbol">
                         </button>
-                        <input class="quantity" value="1"></input>
+                        <input class="quantity" value="1">
                         <button class="centered" onclick="addQuantity(this)">
                             <img src="../images/icons/add.png" alt="addition symbol">
                         </button>
@@ -119,7 +119,7 @@
                         <button type="button" class="centered" onclick="minusQuantity(this)">
                             <img src="../images/icons/minus.png" alt="minus symbol">
                         </button>
-                        <input class="quantity" value="1"></input>
+                        <input class="quantity" value="1">
                         <button type="button" class="centered" onclick="addQuantity(this)">
                             <img src="../images/icons/add.png" alt="addition symbol">
                         </button>
@@ -138,14 +138,22 @@
 
                 <button type="button" class="button-primary">Apply Code</button>
             </div>
-            <p class="checkout-total">Subtotal<span>$114</span></p>
         <hr class="hr-dashed">
-            <p class="checkout-total">Discount<span>$0</span></p>
+            <div class="checkout-total">
+                <p>Subtotal</p>
+                <div class="checkout-total-price">$114</div>
+            </div>
+        <hr class="hr-dashed">
+            <div class="checkout-total">
+                <p>Discount</p>
+                <div class="checkout-total-price">$0</div>
+            </div>
         <hr>
-            <p class="checkout-total total">Total <span>$114</span></p>
-            <a href="./checkout.html">
-                <button class="button-primary checkout-button">Proceed to Checkout</button>
-            </a>
+            <div class="checkout-total total">
+                <p>Total</p>
+                <div class="checkout-total-price">$114</div>
+            </div>
+            <a href="./checkout.html" class="button-primary checkout-button">Proceed to Checkout</a>
        </section>
     </main>
 

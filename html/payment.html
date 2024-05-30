@@ -86,25 +86,23 @@
         <section class="section-box form">
             <div class="form-header">
                 <p class="checkout-heading">Checkout</p>
-                <a href="./checkout.html">
-                    <button class="back-button">Back to Shipping</button>
-                </a>
+                <a href="./cart.html"class="back-button">Back to Shipping</a>
             </div>
 
             <div class="progress-bar">
                 <div class="progress-bar-dot">
-                    <span class="dot fill"></span>
+                    <div class="dot fill"></div>
                     <div>Shipping</div>
                 </div>
                 <hr class="progress-line">
                 <div class="progress-bar-dot">
-                    <span class="dot fill"></span>
+                    <div class="dot fill"></div>
                     <div>Payment</div>
                 </div>
                 <hr class="progress-line inactive">
                 <div class="progress-bar-dot inactive">
-                    <span class="dot unfill"></span>
-                    <div">Completed</div>
+                    <div class="dot unfill"></div>
+                    <div>Completed</div>
                 </div>
             </div>
 
@@ -176,15 +174,24 @@
                 <p class="product-price cart-price">$89</p>
             </div>
 
-            <hr class="hr-dashed">
-            <p class="checkout-total">Shipping<span>$0</span></p>
-            <hr class="hr-dashed">
-            <p class="checkout-total">Discount<span>$0</span></p>
+        <hr class="hr-dashed">
+            <div class="checkout-total">
+                <p>Shipping</p>
+                <div class="checkout-total-price">$0</div>
+            </div>
+        <hr class="hr-dashed">
+            <div class="checkout-total">
+                <p>Discount</p>
+                <div class="checkout-total-price">$0</div>
+            </div>
         <hr>
-        <p class="checkout-total total">Total <span>$114</span></p>
-        <a href="../html/confirmation.html">
-            <input class="button-primary checkout-button" type="submit" value="Complete Payment" form="form-textfield-group"></input>
-        </a>
+            <div class="checkout-total total">
+                <p>Total</p>
+                <div class="checkout-total-price">$114</div>
+            </div>
+ 
+            <input class="button-primary checkout-button" type="submit" value="Complete Payment" form="form-textfield-group">
+
        </section>
     </main>
 

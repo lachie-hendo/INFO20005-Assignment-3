@@ -87,24 +87,22 @@
        <section class="section-box form">
             <div class="form-header">
                 <p class="checkout-heading">Checkout</p>
-                <a href="./cart.html">
-                    <button class="back-button">Back to Cart</button>
-                </a>
+                <a href="./cart.html" class="back-button">Back to Cart</a>
             </div>
             <div class="progress-bar">
                 <div class="progress-bar-dot">
-                    <span class="dot fill"></span>
+                    <div class="dot fill"></div>
                     <div>Shipping</div>
                 </div>
                 <hr class="progress-line inactive">
                 <div class="progress-bar-dot inactive">
-                    <span class="dot unfill"></span>
+                    <div class="dot unfill"></div>
                     <div>Payment</div>
                 </div>
                 <hr class="progress-line inactive">
                 <div class="progress-bar-dot inactive">
-                    <span class="dot unfill"></span>
-                    <div">Completed</div>
+                    <div class="dot unfill"></div>
+                    <div>Completed</div>
                 </div>
             </div>
             <form id="form-textfield-group" action="../html/payment.html" onsubmit="return validateForm()">
@@ -189,14 +187,22 @@
                 <p class="product-price cart-price">$89</p>
             </div>
 
-        <hr class="hr-dashed">
-        <p class="checkout-total">Shipping<span>$0</span></p>
-        <hr class="hr-dashed">
-        <p class="checkout-total">Discount<span>$0</span></p>
-        <hr>
-        <p class="checkout-total total">Total <span>$114</span></p>
-
-        <input class="button-primary checkout-button" type="submit" value="Proceed to Payment" form="form-textfield-group"></input>
+            <hr class="hr-dashed">
+                <div class="checkout-total">
+                    <p>Shipping</p>
+                    <div class="checkout-total-price">$0</div>
+                </div>
+            <hr class="hr-dashed">
+                <div class="checkout-total">
+                    <p>Discount</p>
+                    <div class="checkout-total-price">$0</div>
+                </div>
+            <hr>
+                <div class="checkout-total total">
+                    <p>Total</p>
+                    <div class="checkout-total-price">$114</div>
+                </div>
+            <input class="button-primary checkout-button" type="submit" value="Proceed to Payment" form="form-textfield-group">
 
        </section>
     </main>
