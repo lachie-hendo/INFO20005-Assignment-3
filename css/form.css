@@ -319,8 +319,8 @@ label {
 }
 
 .quantity-group input {
-    width: 30px;
-    padding-left: 9px;
+    width: 20px;
+    padding-left: 5px;
 }
 
 /* plus and minus buttons */
