@@ -86,7 +86,7 @@
         <section class="section-box form">
             <div class="form-header">
                 <p class="checkout-heading">Checkout</p>
-                <a href="./cart.html"class="back-button">Back to Shipping</a>
+                <a href="./checkout.html"class="back-button">Back to Shipping</a>
             </div>
 
             <div class="progress-bar">
@@ -132,15 +132,15 @@
                 </div>
                 <div class="form-textfield mid-input">
                     <label>Card Number</label>
-                    <input class="form-input" type="text" maxlength="16">
+                    <input class="form-input" id="cardNumber" type="text" maxlength="16" minlength="16" onfocus="numberOnly(this)">
                 </div>
                 <div class="form-textfield xsmall-input">
                     <label>Expiry Date</label>
-                    <input class="form-input" type="text" placeholder="MM/YYYY">
+                    <input class="form-input" id="cardDate" type="text" placeholder="MM/YYYY" minlength="7" maxlength="7">
                 </div>
                 <div class="form-textfield xsmall-input">
                     <label>CVC</label>
-                    <input class="form-input" type="text" maxlength="3">
+                    <input class="form-input" id="cvc" type="text" maxlength="3" minlength="3" onfocus="numberOnly(this)">
                 </div>   
             </form>
         </section>
