@@ -85,12 +85,12 @@
 
     <main class="centered">
 
-        <section class="search-box">
+        <div class="search-box">
             <section class="filter-box">
-                <span class="title">
+                <div class="title">
                     <h2>filters</h2>
                     <div class="title-break centered"><hr></div>
-                </span>
+                </div>
 
                 <form action="../html/search.html" class="filter-form">
                     <fieldset class="filters">
@@ -154,30 +154,30 @@
                             </div>
                         </div>
     
-                        <span class="title">
+                        <div class="title">
                             <hr class="filter-break">
-                        </span>
+                        </div>
     
                         <div>
                             <h2 class="filter-title">Price</h2>
                             <div class="filter-prices">
                                 <div class="min-price centered">
                                     <p>from <b>$</b></p>
-                                    <input class="price-input" type="text" value="1" id="min" name="min" min="1" max="5000">
+                                    <input class="price-input" type="text" value="1" id="min" name="min">
                                     <p>AUD</p>
                                 </div>
     
                                 <div class="max-price centered">
                                     <p>to <b>$</b></p>
-                                    <input class="price-input" type="text" value="5000" id="max" name="max" min="1" max="5000">
+                                    <input class="price-input" type="text" value="5000" id="max" name="max">
                                     <p>AUD</p>
                                 </div>
                             </div>
                         </div>
     
-                        <span class="title">
+                        <div class="title">
                             <hr class="filter-break">
-                        </span>
+                        </div>
     
                         <div>
                             <h2 class="filter-title">Console</h2>
@@ -224,17 +224,17 @@
                 </form>
             </section>
 
-            <span class="title">
+            <div class="title">
                 <hr class="vertical-break">
-            </span>
+            </div>
 
             <section>
-                <span class="search-page-bar truncate">
+                <div class="search-page-bar truncate">
                     <img class="search-icon" 
                          src="../images/icons/search.png" 
                          alt="search icon">
                     <p class="search-products truncate">Gamecube</p>
-                </span>
+                </div>
                 
                 <div class="search-page-filters">
                     <img class="menu-icon icon" src="../images/icons/filter.png" alt="filter icon">
@@ -242,25 +242,25 @@
                 </div>
 
 
-                <span class="title">
+                <div class="title">
                     <h2>showing 12 of 50 results</h2>
                     <div class="title-break centered"><hr></div>
-                </span>
+                </div>
 
-                <span class="search-product-box">
-                    <a class="product-card" href="../html/product.html">
-                        <div class="product-card-image centered">
+                <div class="search-product-box">
+                    <div class="product-card">
+                        <a class="product-card-image centered" href="../html/product.html">
                             <img src="../images/games/mario-golf-toadstool-tour/mario-golf-toadstool-tour.webp" alt="Mario Golf: Toadstool Tour cover">
-                        </div>
+                        </a>
                         <div class="product-card-detail">
-                            <div>
+                            <a href="../html/product.html">
                                 <hr>
                                 <p class="product-price">$25</p>
                                 <p>Mario Golf: Toadstool Tour</p>
-                            </div>
-                            <button class="button-primary add-product add-to-cart">Add to Cart</button>
+                            </a>
+                            <button class="button-primary centered add-product add-to-cart">Add to Cart</button>
                         </div>           
-                    </a>
+                    </div>
 
                     <div class="product-card">
                         <div class="product-card-image centered">
@@ -415,13 +415,13 @@
                             <button class="button-primary add-product add-to-cart">Add to Cart</button>
                         </div>                 
                     </div>
-                </span>
+                </div>
             </section>
-        </section> 
+        </div> 
 
-        <span class="title">
+        <div class="title">
             <hr class="section-break">
-        </span>
+        </div>
     </main>
 
     <footer class="footer centered">

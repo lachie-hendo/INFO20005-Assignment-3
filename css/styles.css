@@ -25,7 +25,7 @@ h1 {
 a {
     height: 100%;
     text-decoration: none;
-    color: var(--grey-4);
+    color: var(--black);
 }
 
 img {
@@ -678,6 +678,11 @@ b {
 .product-text {
     font-size: var(--text-xl);
 }
+
+.product-hyperlink {
+    color: var(--grey-4);
+}
+
 /* === Buttons ============================================================= */
 
 .button-primary {
