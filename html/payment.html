@@ -127,22 +127,22 @@
                     <img src="../images/brands/paypal-logo.svg" alt="Paypal">
                 </div>
             </div>
-            <form id="form-textfield-group" >
+            <form id="form-textfield-group" action="../html/confirmation.html" onsubmit="return validateForm()">
                 <div class="form-textfield large-input">
                     <label>Name on Card</label>
-                    <input type="text"> 
+                    <input class="form-input" type="text"> 
                 </div>
                 <div class="form-textfield mid-input">
                     <label>Card Number</label>
-                    <input type="text" maxlength="16">
+                    <input class="form-input" type="text" maxlength="16">
                 </div>
                 <div class="form-textfield xsmall-input">
                     <label>Expiry Date</label>
-                    <input type="text" placeholder="MM/YYYY">
+                    <input class="form-input" type="text" placeholder="MM/YYYY">
                 </div>
                 <div class="form-textfield xsmall-input">
                     <label>CVC</label>
-                    <input type="text" maxlength="3">
+                    <input class="form-input" type="text" maxlength="3">
                 </div>   
             </form>
         </section>
@@ -183,7 +183,7 @@
         <hr>
         <p class="checkout-total total">Total <span>$114</span></p>
         <a href="../html/confirmation.html">
-            <button class="button-primary checkout-button">Complete Payment</button>
+            <input class="button-primary checkout-button" type="submit" value="Complete Payment" form="form-textfield-group"></input>
         </a>
        </section>
     </main>
@@ -242,5 +242,6 @@
     </nav>
 
     <script src="../js/script.js"></script>
+    <script src="../js/authentication.js"></script>
 </body>
 </html>
