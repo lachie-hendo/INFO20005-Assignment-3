@@ -107,24 +107,24 @@
             </div>
             <form id="form-textfield-group" action="../html/payment.html" onsubmit="return validateForm()">
                     <div class="form-textfield large-input">
-                        <label>Full Name</label>
+                        <label for="fullname">Full Name</label>
                         <input class="form-input" type="text" id="fullname">
                     </div>
                     <div class="form-textfield large-input">
-                        <label>Email</label>
-                        <input class="form-input" type="text" id="email">
+                        <label for="email">Email</label>
+                        <input class="form-input" type="text" id="email" autocomplete="email">
                     </div>
                     <div class="form-textfield large-input">
-                        <label>Street Address</label>
+                        <label for="streetaddress">Street Address</label>
                         <input class="form-input" type="text" id="streetaddress">
                     </div>
                     <div class="form-textfield small-input">
-                        <label>City</label>
+                        <label for="city">City</label>
                         <input class="form-input" type="text" id="city">
                     </div>
                     <div class="form-textfield mid-input">
-                        <label>State/Territory</label>
-                        <select required>
+                        <label for="state-selection">State/Territory</label>
+                        <select id="state-selection" required>
                             <option value="">Select State</option>
                             <option value="1">Victoria</option>
                             <option value="2">Queensland</option>
@@ -137,8 +137,8 @@
                         </select>
                     </div>
                     <div class="form-textfield small-input">
-                        <label>Postcode</label>
-                        <input class="form-input"  id="Postcode" type="text" maxlength="4" minlength="4" onfocus="numberOnly(this)">
+                        <label for="postcode">Postcode</label>
+                        <input class="form-input"  id="postcode" type="text" maxlength="4" minlength="4" onfocus="numberOnly(this)">
                     </div>
             </form>
 
