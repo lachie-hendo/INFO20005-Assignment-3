@@ -8,17 +8,13 @@
     --text-scale-ratio: 1.25;
 
     /* === Text Scale ================================================ */
-    --text-xxs: calc(var(--text-base-size) / (var(--text-scale-ratio)
-        * var(--text-scale-ratio) * var(--text-scale-ratio)));
-    --text-xs: calc(var(--text-base-size) / (var(--text-scale-ratio)
-        * var(--text-scale-ratio)));
+    --text-xxs: calc(var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-xs: calc(var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio)));
     --text-s: calc(var(--text-base-size) / (var(--text-scale-ratio)));
     --text-m: calc(var(--text-base-size));
     --text-l: calc(var(--text-base-size) * var(--text-scale-ratio));
-    --text-xl: calc(var(--text-base-size) * var(--text-scale-ratio)
-        * var(--text-scale-ratio));
-    --text-xxl: calc(var(--text-base-size) * var(--text-scale-ratio)
-        * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
 
     /* === Spacing ====== */
     --space-xxs: .25rem;
