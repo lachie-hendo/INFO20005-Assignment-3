@@ -404,11 +404,14 @@ label {
 
 .order-number {
     font-weight: bold;
+    margin-left: 5px;
 }
 
 /* apply spacing for the 'game on' and order number lines */
 .confirm-text {
     margin: var(--space-s); 
+    display: flex;
+    justify-content: center;
 }
 
 .clicked {
